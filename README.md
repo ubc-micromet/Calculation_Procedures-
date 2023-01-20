@@ -1,4 +1,4 @@
-# Trace Analysis Ini Files - Instructions and guidelines
+# Calculation Procedures- Instructions and guidelines for Trace Analysis Ini Files 
 
 ## First Stage
 
