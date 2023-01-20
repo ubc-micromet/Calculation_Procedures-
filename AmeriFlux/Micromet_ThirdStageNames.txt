@@ -1,0 +1,5 @@
+"Type","Variable"
+"PI","NEE"
+"PI","GPP"
+"PI","RECO" 
+"PI","FCH4"
