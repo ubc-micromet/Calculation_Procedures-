@@ -6,9 +6,10 @@
 
 ## Stage 1
 
-* BB1/2 - wind speed by RM Young?
+* BB1/2 - wind dir by RM Young?
 * Serial #s and calibrations?
-* consistency in min/max/clamping
+* Check/ensure consistency in min/max/clamping
+    * e.g. WTD - where is zero level?
 * Which variables to bring over from other sites
     * ECCC - BB for BB sites? Others for RBM/DSM?
     * Radiation from nearest micromet sites? Totem?
@@ -40,6 +41,7 @@
     * For NETRAD_1_1_1
         * Evaluate = 'NETRAD_1_1_1 = NETRAD_1_1_1; ?
         * Or re-cacluate as sum of components?
+* Soil parameters - fill with equivalent from BB1/2
 
 ## run_std_dev()
 
@@ -50,6 +52,29 @@
         * Is this saved for stage 3?
 * Better than Median Absolute Deviation?
 
-## Variables
+## Variables/Naming
+
+* Why change soil temp conventions?
+    * e.g., TS_1_1_1 to TS_1 ... etc?
 
 * Do we want VPD_1_2_1?
+
+* NEE calculation
+    * Should it be and "or" statement instead of an "and"?
+    
+```MATLAB
+NEE = sum([FC,SC],2,''omitnan'');
+NEE(all(isnan(FC)&isnan(SC),2)) = NaN;
+```
+
+* Add a NME variable?
+
+```MATLAB
+NME = sum([FCH4,SCH4],2,''omitnan'');
+NME(all(isnan(FCH4)&isnan(SCH4),2)) = NaN;
+```
+
+## Plotting outputs?
+
+* What matlab command lets us plot the outputs from each stage?
+
