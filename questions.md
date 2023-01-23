@@ -4,6 +4,9 @@
 
 * What format is the data stored in?  
 
+* Met folder
+    - 5min,30min?
+
 ## Stage 1
 
 * BB1/2 - wind dir by RM Young?
