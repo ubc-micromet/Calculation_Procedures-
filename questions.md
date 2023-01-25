@@ -1,29 +1,47 @@
 # ini file questions
 
-## General
+# Meeting General Notes
 
-* What format is the data stored in?  
+* Main script in task scheduler
+
+* What format is the data stored in?
+    * Data format - IEEE4 4-byte single precision 
+    * Docs list?
+    * Check the program for outputs when questions arrise
+    * Easy way to read/view files?
+    * guiPlotTraces - matlab
 
 * Met folder
     - 5min,30min?
 
+* clean_tv Time vector file
+    * 30 minute time vector file - Local Standard Time
+
+* Derived variables - custom scripts on per-site basis
+    - break values
+
 ## Stage 1
 
 * BB1/2 - wind dir by RM Young?
+    * MET_Young_WS_WVc1 - pass thru to stage 2 then calc
+
 * Serial #s and calibrations?
+
 * Check/ensure consistency in min/max/clamping
     * e.g. WTD - where is zero level?
+
 * Which variables to bring over from other sites
     * ECCC - BB for BB sites? Others for RBM/DSM?
     * Radiation from nearest micromet sites? Totem?
+
 * Naming conventions for variables- e.g. TA_1_1_1
     * Var_Position_Level_???
 
-## Stage 2
+# Stage 2
 
-## clean_tv
+## Clamping
 
-* What is it?
+* Min/max consistency between sites
 
 ## Time Shift Correction
 
@@ -53,6 +71,7 @@
     * Don't: precip?
     * What about fluxes?
         * Is this saved for stage 3?
+    * Think about which to apply
 * Better than Median Absolute Deviation?
 
 ## Variables/Naming
@@ -64,6 +83,7 @@
 
 * NEE calculation
     * Should it be and "or" statement instead of an "and"?
+    * Storage corrected
     
 ```MATLAB
 NEE = sum([FC,SC],2,''omitnan'');
@@ -80,4 +100,5 @@ NME(all(isnan(FCH4)&isnan(SCH4),2)) = NaN;
 ## Plotting outputs?
 
 * What matlab command lets us plot the outputs from each stage?
+    * guiPlotTraces
 
