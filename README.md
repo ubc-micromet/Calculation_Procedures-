@@ -1,5 +1,22 @@
 # Instructions and guidelines for Trace Analysis Ini Files
 
+The ini files for a given site dictate how data is transferred from its raw format into a standardized, cleaned and gap-filled format that can be used for scientific analysis. They provide instructions to a set of MATLAB and R scripts used to process our data.  The ini files are necessary because not every site is set up in exactly the same way (different sensors, loggers, record lengths, etc.). The files are separated into three stages:  
+
+* **Stage 1** collects the raw data, applies min/max filtering, assigns consistent variable names, and moves the relevant folders to a "clean" folder in preparation for Stage 2.
+  * The data are stored as binary files in "Single-precision floating-point format" (aka Float 32)
+  * The clean_tv file, which is located in each raw/clean folder is a standardized 30 minute "time vector" which formats the timestamp of each record in **Local Standard Time**
+
+* **Stage 2** collects the stage 1 data, generates the "best" observation for each trace and moves the relevant folders to a "Clean/SecondStage" folder in preparation for Stage 3.
+  * For example if we have two observations for soil temperature at 5 cm, or three soil heat flux plates at 5cm, it will average them to get a more representative value.  It can also gapfill Met data with data from a nearby station
+    * i.e. it will pull air temperature data from a nearby environment Canada weather station to fill missing values at a flux site.
+
+* **Stage 3** collects the stage 1 data and applies filtering and gap filling procedures to the flux data.
+
+You can use the **guiPlotTraces** app to view raw or cleaned traces during any stage.  Its helpful to look at the data to make sure things are working as expected.
+
+
+<img src="images/Database_Workflow.png">
+
 ## First Stage
 
 In the first stage of cleaning the idea is to clean up the data so we can keep only the best measured values (data points) for each sensor. No interpolation is done at this stage so any removed points will not be gap-filled. If the researcher is looking for the best measurements from a particular sensor, this is the data that they want.
@@ -33,7 +50,7 @@ Grayed out parameters are legacy properties that should not be used in the new i
 | ----------- | ----------- |
 | Header/Comments      | “%” character indicates the beginning of a comment. Program will not process any characters that follow “%”. Use comments to add information and to better document the site. Each line of the ini file can be followed by a comment. Comments were removed from the above example to improve readability of this document. Refer to the example ini file at the end of this document. (link here FirstStage.ini file from DSM site)       |
 | Site_name   | Name of the site. Any text can go here.        |
-| SiteID      | This is the name attributed to the site in the database (e.g., DSM or BB1). |
+| SiteID      | This is the name attributed to the site in the database (e.g., DSM or BB). |
 | Difference_GMT_to_local_time | Time difference between GMT time, that database is kept in, and the standard time at the site location (for PST this is +8). |
 |[Trace] | Marks the beginning of a new variable. The section has to end with the keyword <[END]>.|
 | variableName | Name of variable for first stage. The variable with this name created here will show up in the sub-folder “Clean” under the same folder where the original database file came from. In the Micromet Lab, these should follow the AmeriFlux naming convention. |
@@ -76,6 +93,23 @@ The main features:
 2. More complex user-defined processing can be applied to the trace using the “Evaluate” option. User written Matlab functions can be called from this statement. Multiple Matlab statements can be called from within the “Evaluate” string. Some rules for formatting apply here (see the existing SecondStage ini file for details and examples).
 
 <img src="images/second stage.png">
+
+### Properties
+
+| Field      | Description |
+| ----------- | ----------- |
+| Site_name   | Name of the site. Any text can go here.        |
+| SiteID      | This is the name attributed to the site in the database (e.g., DSM or BB). |
+| input_path  | This can stay blank |
+| output_path | The local output path?  **Example says leave blank?** |
+| high_level_path | {} -used to indicate Met/Flux, etc.|
+| searchPath  | leave as low_level,current |
+|[Trace] | Marks the beginning of a new variable. The section has to end with the keyword <[END]>.|
+| variableName | Name of variable for second stage. The variable with this name created here will show up in the yyyy/SiteID/Clean/SecondStage folder In the Micromet Lab, these should follow the AmeriFlux naming convention. |
+| Evaluate | User defined function.  If no function is applied, default input will just pass variable thru.  ```Evaluate = 'TKE = TKE;'```.  Use ```calc_avg_trace``` function (see above) to gap-fill met variables (eg. air temp) with values from secondary measurements or nearby sites|
+| Title | Descriptive title for plots/visualization. |
+| units | ‘char’ - Units for this trace |
+| minMax | minMax filter values from stage 1 - **double check if still needed.** |
 
 ## Third Stage
 

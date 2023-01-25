@@ -1,6 +1,7 @@
 import re
 from os import walk
 import pandas as pd
+import numpy as np
 Year = 2021
 Site = 'BB'
 
@@ -44,6 +45,9 @@ for (dirpath, dirnames, filenames) in walk(Path):
     proceed = 1
 print(Missing_Files)
 # print(Contains)
+# Missing = pd.DataFrame(index = np.arange(len(Missing_Files)) , data=Missing_Files)
+# print(Missing)
+
 
 
 
