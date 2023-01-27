@@ -109,7 +109,7 @@ The main features:
 | Evaluate | User defined function.  If no function is applied, default input will just pass variable thru.  ```Evaluate = 'TKE = TKE;'```.  Use ```calc_avg_trace``` function (see above) to gap-fill met variables (eg. air temp) with values from secondary measurements or nearby sites|
 | Title | Descriptive title for plots/visualization. |
 | units | ‘char’ - Units for this trace |
-| minMax | minMax filter values from stage 1 - **double check if still needed.** |
+| minMax | minMax filter values from stage 1 - ** This parameter is needed due to syntax requrements but it is NOT used for cleaning **  |
 
 ## Third Stage
 
