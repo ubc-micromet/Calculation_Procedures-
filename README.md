@@ -102,14 +102,14 @@ The main features:
 | SiteID      | This is the name attributed to the site in the database (e.g., DSM or BB). |
 | input_path  | This can stay blank |
 | output_path | The local output path?  **Example says leave blank?** |
-| high_level_path | {} -used to indicate Met/Flux, etc.|
-| searchPath  | leave as low_level,current |
+| high_level_path | leave blank:{}. It used to indicate Met/Flux, etc.|
+| searchPath  | All traces on this path(s) will be loaded up and available in the SecondStage cleaning. Syntax: use 'auto' or use specific folders to limit or to expand the (example: 'Flux\Clean,Met\Clean,Flags\Clean'). When option 'auto' is used, all the traces created by the FirstStage cleaning will be automatically loaded before the SecondStage cleaning starts. |
 |[Trace] | Marks the beginning of a new variable. The section has to end with the keyword <[END]>.|
 | variableName | Name of variable for second stage. The variable with this name created here will show up in the yyyy/SiteID/Clean/SecondStage folder In the Micromet Lab, these should follow the AmeriFlux naming convention. |
 | Evaluate | User defined function.  If no function is applied, default input will just pass variable thru.  ```Evaluate = 'TKE = TKE;'```.  Use ```calc_avg_trace``` function (see above) to gap-fill met variables (eg. air temp) with values from secondary measurements or nearby sites|
 | Title | Descriptive title for plots/visualization. |
 | units | ‘char’ - Units for this trace |
-| minMax | minMax filter values from stage 1 - **double check if still needed.** |
+| minMax | minMax filter values from stage 1 - ** This parameter is needed due to syntax requrements but it is NOT used for cleaning **  |
 
 ## Third Stage
 
