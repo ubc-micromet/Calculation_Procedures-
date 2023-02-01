@@ -16,7 +16,7 @@
 # --------- These lines should not need editing ----------------------------------------------------
 
 # Year the site was established
-'estYear <- 2014;'
+estYear <- 2019
 
 # Grab the arguments from Run_ThirdStage_REddyProc call
 
