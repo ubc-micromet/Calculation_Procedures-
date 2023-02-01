@@ -47,8 +47,8 @@ vars <- c("NEE","FC","LE","H","FCH4","SW_IN_1_1_1","TA_1_1_1","RH_1_1_1","VPD_1_
 tv_input <- "clean_tv"
 
 # Specify site location
-lat <- -12.8314 # Site latitude
-long <- -69.2836 # Site longitude
+lat <- 49.1318, # Site latitude
+long <- -123.1975 # Site longitude
 TimeZoneHour <- -8 # time offset (in PST) from UTC 
 
 export <- 0 # 1 to save a csv file of the data, 0 otherwise
