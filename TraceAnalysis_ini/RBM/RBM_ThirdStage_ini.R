@@ -47,7 +47,7 @@ vars <- c("NEE","FC","LE","H","FCH4","SW_IN_1_1_1","TA_1_1_1","RH_1_1_1","VPD_1_
 tv_input <- "clean_tv"
 
 # Specify site location
-lat <- 49.1318, # Site latitude
+lat <- 49.1318 # Site latitude
 long <- -123.1975 # Site longitude
 TimeZoneHour <- -8 # time offset (in PST) from UTC 
 

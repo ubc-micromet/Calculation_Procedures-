@@ -1,3 +1,41 @@
-Error in library("REddyProc") : there is no package called 'REddyProc'
-Calls: ThirdStage_REddyProc -> library
+Loading required package: dplyr
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Loading required package: lubridate
+
+Attaching package: 'lubridate'
+
+The following objects are masked from 'package:base':
+
+    date, intersect, setdiff, union
+
+
+
+In ThirdStage_REddyProc:
+   Do we need to reload the ini file here again?
+
+Converted time format 'YDH' to POSIX with column name 'DateTime'.
+New sEddyProc class for site 'BB'
+Error in usEstUstarThreshold(ds, seasonFactor = .self$sTEMP$season, ...) : 
+  sEstUstarThreshold: no finite records in dataset
+Calls: ThirdStage_REddyProc ... withCallingHandlers -> <Anonymous> -> usEstUstarThreshold
 Execution halted
+
+
+
+
+=============================================================
+Rscript:      C:\Program Files\R\R-4.2.1\bin\Rscript.exe
+Start:        01-Feb-2023 16:31:57
+End:          01-Feb-2023 16:31:58
+Elapsed time:    0.0 min
+==============================================================
