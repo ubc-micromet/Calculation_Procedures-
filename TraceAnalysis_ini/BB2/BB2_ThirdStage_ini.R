@@ -15,19 +15,19 @@
 
 # --------- These lines should not need editing ----------------------------------------------------
 
-# Year the site was established - set to 2019 for now because thats as far back as I've tested
+# Year the site was established
 estYear <- 2019
 
 # Grab the arguments from Run_ThirdStage_REddyProc call
 
 if(length(commandArgs(trailingOnly = TRUE))==0){
-  cat("\nIn: BB_ThirdStage_ini:\nNo input parameters!\nUsing whatever is in args variable \n")
+  cat("\nIn: BB2_ThirdStage_ini:\nNo input parameters!\nUsing whatever is in args variable \n")
 } else {
   # otherwise use the third argument to pass the path
   args 		<- commandArgs(trailingOnly = TRUE)
 }    
 
-pathSetIni   		<- args[2]z
+pathSetIni   		<- args[2]
 
 # load input arguments from pathInputArgs file
 source(pathSetIni)
@@ -55,8 +55,8 @@ vars <- c("NEE","FC","LE","H","FCH4","SW_IN_1_1_1","TA_1_1_1","RH_1_1_1","VPD_1_
 tv_input <- "clean_tv"
 
 # Specify site location
-lat <- 	49.1296  # Site latitude
-long <- -122.9851 # Site longitude
+lat <- 	49.1190  # Site latitude
+long <- -122.9947 # Site longitude
 TimeZoneHour <- -8 # time offset (in PST) from UTC 
 
 export <- 0 # 1 to save a csv file of the data, 0 otherwise
@@ -92,7 +92,7 @@ vars_third_stage_RF_FCH4 <- c('FCH4_PI_F_RF')
 # Variables to copy from Second to Third stage- see second stage ini file for variable description
 # CHECK WHY 'COND_WATER_1_1_1' isn't working anymore
 copy_vars <- c('clean_tv','TA_1_1_1','TA_1_2_1','RH_1_1_1','RH_1_2_1','VPD_1_1_1','PA_1_1_1','P_1_1_1','WS_1_1_1','WD_1_1_1',
-               'wind_speed','wind_dir','DO_1_1_1','WTD_1_1_1','ORP_1_1_1',
+               'wind_speed','wind_dir','WTD_1_1_1','ORP_1_1_1',
                'pH_1_1_1','TW_1_1_1','CO2','H2O','CH4','SW_IN_1_1_1','SW_OUT_1_1_1','LW_IN_1_1_1','LW_OUT_1_1_1',
                'NETRAD_1_1_1','ALB_1_1_1','PPFD_IN_1_1_1','PPFD_OUT_1_1_1',
                'TS_1','TS_2','TS_3','G_1','USTAR','SLE','SH','SCH4','SC',
