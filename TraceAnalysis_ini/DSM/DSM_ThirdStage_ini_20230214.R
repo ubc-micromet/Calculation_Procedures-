@@ -49,20 +49,19 @@ years_RF <- unique(c(stYear, edYear)) # Specify the number of years to use in RF
 # Edit the following lines for each site:
 
 # Specify variables of interest
-vars <- c("FC","LE","H","FCH4","SW_IN_1_1_1","TA_1_1_1","RH_1_1_1","VPD_1_1_1","USTAR") 
-vars_storage <- c("SC","SH","SLE","SCH4") 
+vars <- c("NEE","FC","LE","H","FCH4","SW_IN_1_1_1","TA_1_1_1","RH_1_1_1","VPD_1_1_1","USTAR") 
 
 # Specify time vector name
 tv_input <- "clean_tv"
 
 # Specify site location
-lat <- -12.8314 # Site latitude
-long <- -69.2836 # Site longitude
+lat <- 	49.0894 # Site latitude
+long <- -122.8948 # Site longitude
 TimeZoneHour <- -8 # time offset (in PST) from UTC 
 
 export <- 0 # 1 to save a csv file of the data, 0 otherwise
 
-# Specify variables only relevant variables for input into REddyProc (Make sure to add NEE if you have FC included above)
+# Specify variables only relevant variables for input into REddyProc 
 col_order <- c("year","DOY","HHMM","NEE","FC","LE","H","FCH4","SW_IN_1_1_1","TA_1_1_1","RH_1_1_1","VPD_1_1_1","USTAR")
 
 # Specify variable names in REddyProc
