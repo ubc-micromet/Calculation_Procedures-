@@ -28,7 +28,6 @@ t4=datenum(2023,2,13,12,0,0);
 p1=find(clean_tv>=t1 & clean_tv<t2);
 p2=find(clean_tv>=t2 & clean_tv<t3);
 p3=find(clean_tv>=t3 & clean_tv<t4);
-disp('breakpoint 1')
 
 %% Build fitting models
 % model_1: DSM(SWin, SWout, LWin, G, TS_1)➜DSM(LWout)
