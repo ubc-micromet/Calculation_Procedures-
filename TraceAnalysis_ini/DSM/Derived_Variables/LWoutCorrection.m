@@ -28,7 +28,7 @@ t4=datenum(2023,2,13,12,0,0);
 p1=find(clean_tv>=t1 & clean_tv<t2);
 p2=find(clean_tv>=t2 & clean_tv<t3);
 p3=find(clean_tv>=t3 & clean_tv<t4);
-
+disp('breakpoint 1')
 
 %% Build fitting models
 % model_1: DSM(SWin, SWout, LWin, G, TS_1)➜DSM(LWout)
@@ -36,7 +36,7 @@ x1=[SW_IN_1_1_1(p3), SW_OUT_1_1_1(p3), LW_IN_1_1_1(p3), TS_1(p3), G_1(p3)];
 y1=[LW_OUT_1_1_1(p3)];
 mdl_1 = fitlm(x1,y1);
 coe_1=mdl_1.Coefficients.Estimate;
-
+disp(coe_1)
 % model_2: (NetRad)RBM➜DSM
 x2=RBM_NETRAD_1_1_1(p3);
 y2=NETRAD_1_1_1(p3);
