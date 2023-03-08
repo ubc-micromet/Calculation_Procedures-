@@ -3,6 +3,8 @@
 
 # Revisions
 #
+# Mar 7, 2023 (Zoran)
+#   - change lat/long. It was set to (wrong) values:lat <- -12.8314 # Site latitude long <- -69.2836 # Site longitude
 # Nov 7, 2022 (Zoran)
 #   - added unique() to year range to avoid year ranges where two same numbers appear
 #     (like years_REddyProc <- c(2022, 2022) which causes an error later on in ThirdStage_REddyProc).
