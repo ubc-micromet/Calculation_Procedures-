@@ -27,8 +27,8 @@ Converted time format 'YDH' to POSIX with column name 'DateTime'.
 New sEddyProc class for site 'RBM'
 
 Estimated UStar distribution of:
-       uStar        5%      50%       95%
-1 0.1883198 0.1194638 0.175977 0.2177404 
+       uStar        5%       50%       95%
+1 0.1883198 0.1239778 0.1768068 0.2248857 
 by using  100 bootstrap samples and controls:
                        taClasses                    UstarClasses 
                               7                              20 
@@ -39,254 +39,254 @@ by using  100 bootstrap samples and controls:
 isUsingOneBigSeasonOnFewRecords 
                               1 
 Ustar filtering (u * Th_1 = 0.18831983457009), marked 39% of the data as gap
-Initialized variable 'NEE' with 10587 real gaps for gap filling of all 10241 values (to estimate uncertainties).
+Initialized variable 'NEE' with 10800 real gaps for gap filling of all 10241 values (to estimate uncertainties).
 Full MDS algorithm for gap filling of 'NEE.Ustar_uStar_fqc_0' with LUT(Rg, VPD, Tair) and MDC.
 Look up table with window size of 7 days with Rg VPD Tair
 ............................................................
-...........................................10176
+...........................................10191
 Look up table with window size of 14 days with Rg VPD Tair
 45
 Look up table with window size of 7 days with Rg
-18
+3
 Mean diurnal course with window size of 0 days: .
 2
-Finished gap filling of 'NEE' in 5 seconds. Artificial gaps filled: 10241, real gaps filled: 10587, unfilled (long) gaps: 7279.
-Ustar filtering (u * Th_1 = 0.119463803491497), marked 35% of the data as gap
-Initialized variable 'NEE' with 9793 real gaps for gap filling of all 10241 values (to estimate uncertainties).
+Finished gap filling of 'NEE' in 7 seconds. Artificial gaps filled: 10241, real gaps filled: 10800, unfilled (long) gaps: 7279.
+Ustar filtering (u * Th_1 = 0.123977831784974), marked 35% of the data as gap
+Initialized variable 'NEE' with 10078 real gaps for gap filling of all 10241 values (to estimate uncertainties).
 Full MDS algorithm for gap filling of 'NEE.Ustar_U05_fqc_0' with LUT(Rg, VPD, Tair) and MDC.
 Look up table with window size of 7 days with Rg VPD Tair
 ............................................................
-...........................................10197
+...........................................10211
 Look up table with window size of 14 days with Rg VPD Tair
-24
+25
 Look up table with window size of 7 days with Rg
-18
+3
 Mean diurnal course with window size of 0 days: .
 2
-Finished gap filling of 'NEE' in 5 seconds. Artificial gaps filled: 10241, real gaps filled: 9793, unfilled (long) gaps: 7279.
-Ustar filtering (u * Th_1 = 0.175976952626592), marked 38% of the data as gap
-Initialized variable 'NEE' with 10441 real gaps for gap filling of all 10241 values (to estimate uncertainties).
+Finished gap filling of 'NEE' in 6 seconds. Artificial gaps filled: 10241, real gaps filled: 10078, unfilled (long) gaps: 7279.
+Ustar filtering (u * Th_1 = 0.176806783037526), marked 39% of the data as gap
+Initialized variable 'NEE' with 10665 real gaps for gap filling of all 10241 values (to estimate uncertainties).
 Full MDS algorithm for gap filling of 'NEE.Ustar_U50_fqc_0' with LUT(Rg, VPD, Tair) and MDC.
 Look up table with window size of 7 days with Rg VPD Tair
 ............................................................
-...........................................10184
-Look up table with window size of 14 days with Rg VPD Tair
-37
-Look up table with window size of 7 days with Rg
-18
-Mean diurnal course with window size of 0 days: .
-2
-Finished gap filling of 'NEE' in 5 seconds. Artificial gaps filled: 10241, real gaps filled: 10441, unfilled (long) gaps: 7279.
-Ustar filtering (u * Th_1 = 0.217740377535423), marked 41% of the data as gap
-Initialized variable 'NEE' with 10876 real gaps for gap filling of all 10241 values (to estimate uncertainties).
-Full MDS algorithm for gap filling of 'NEE.Ustar_U95_fqc_0' with LUT(Rg, VPD, Tair) and MDC.
-Look up table with window size of 7 days with Rg VPD Tair
-............................................................
-...........................................10171
-Look up table with window size of 14 days with Rg VPD Tair
-50
-Look up table with window size of 7 days with Rg
-18
-Mean diurnal course with window size of 0 days: .
-2
-Finished gap filling of 'NEE' in 5 seconds. Artificial gaps filled: 10241, real gaps filled: 10876, unfilled (long) gaps: 7279.
-Ustar filtering (u * Th_1 = 0.18831983457009), marked 39% of the data as gap
-Initialized variable 'FC' with 10803 real gaps for gap filling of all 10241 values (to estimate uncertainties).
-Full MDS algorithm for gap filling of 'FC.Ustar_uStar_fqc_0' with LUT(Rg, VPD, Tair) and MDC.
-Look up table with window size of 7 days with Rg VPD Tair
-............................................................
-...........................................10176
-Look up table with window size of 14 days with Rg VPD Tair
-45
-Look up table with window size of 7 days with Rg
-18
-Mean diurnal course with window size of 0 days: .
-2
-Finished gap filling of 'FC' in 4 seconds. Artificial gaps filled: 10241, real gaps filled: 10803, unfilled (long) gaps: 7279.
-Ustar filtering (u * Th_1 = 0.119463803491497), marked 35% of the data as gap
-Initialized variable 'FC' with 10023 real gaps for gap filling of all 10241 values (to estimate uncertainties).
-Full MDS algorithm for gap filling of 'FC.Ustar_U05_fqc_0' with LUT(Rg, VPD, Tair) and MDC.
-Look up table with window size of 7 days with Rg VPD Tair
-............................................................
-...........................................10197
-Look up table with window size of 14 days with Rg VPD Tair
-24
-Look up table with window size of 7 days with Rg
-18
-Mean diurnal course with window size of 0 days: .
-2
-Finished gap filling of 'FC' in 5 seconds. Artificial gaps filled: 10241, real gaps filled: 10023, unfilled (long) gaps: 7279.
-Ustar filtering (u * Th_1 = 0.175976952626592), marked 38% of the data as gap
-Initialized variable 'FC' with 10658 real gaps for gap filling of all 10241 values (to estimate uncertainties).
-Full MDS algorithm for gap filling of 'FC.Ustar_U50_fqc_0' with LUT(Rg, VPD, Tair) and MDC.
-Look up table with window size of 7 days with Rg VPD Tair
-............................................................
-...........................................10184
-Look up table with window size of 14 days with Rg VPD Tair
-37
-Look up table with window size of 7 days with Rg
-18
-Mean diurnal course with window size of 0 days: .
-2
-Finished gap filling of 'FC' in 5 seconds. Artificial gaps filled: 10241, real gaps filled: 10658, unfilled (long) gaps: 7279.
-Ustar filtering (u * Th_1 = 0.217740377535423), marked 41% of the data as gap
-Initialized variable 'FC' with 11090 real gaps for gap filling of all 10241 values (to estimate uncertainties).
-Full MDS algorithm for gap filling of 'FC.Ustar_U95_fqc_0' with LUT(Rg, VPD, Tair) and MDC.
-Look up table with window size of 7 days with Rg VPD Tair
-............................................................
-...........................................10171
-Look up table with window size of 14 days with Rg VPD Tair
-50
-Look up table with window size of 7 days with Rg
-18
-Mean diurnal course with window size of 0 days: .
-2
-Finished gap filling of 'FC' in 5 seconds. Artificial gaps filled: 10241, real gaps filled: 11090, unfilled (long) gaps: 7279.
-Ustar filtering (u * Th_1 = 0.18831983457009), marked 39% of the data as gap
-Initialized variable 'LE' with 11241 real gaps for gap filling of all 10241 values (to estimate uncertainties).
-Full MDS algorithm for gap filling of 'LE.Ustar_uStar_fqc_0' with LUT(Rg, VPD, Tair) and MDC.
-Look up table with window size of 7 days with Rg VPD Tair
-............................................................
-...........................................10170
-Look up table with window size of 14 days with Rg VPD Tair
-50
-Look up table with window size of 7 days with Rg
-21
-Finished gap filling of 'LE' in 5 seconds. Artificial gaps filled: 10241, real gaps filled: 11241, unfilled (long) gaps: 7279.
-Ustar filtering (u * Th_1 = 0.119463803491497), marked 35% of the data as gap
-Initialized variable 'LE' with 10601 real gaps for gap filling of all 10241 values (to estimate uncertainties).
-Full MDS algorithm for gap filling of 'LE.Ustar_U05_fqc_0' with LUT(Rg, VPD, Tair) and MDC.
-Look up table with window size of 7 days with Rg VPD Tair
-............................................................
-...........................................10204
-Look up table with window size of 14 days with Rg VPD Tair
-16
-Look up table with window size of 7 days with Rg
-21
-Finished gap filling of 'LE' in 5 seconds. Artificial gaps filled: 10241, real gaps filled: 10601, unfilled (long) gaps: 7279.
-Ustar filtering (u * Th_1 = 0.175976952626592), marked 38% of the data as gap
-Initialized variable 'LE' with 11120 real gaps for gap filling of all 10241 values (to estimate uncertainties).
-Full MDS algorithm for gap filling of 'LE.Ustar_U50_fqc_0' with LUT(Rg, VPD, Tair) and MDC.
-Look up table with window size of 7 days with Rg VPD Tair
-............................................................
-...........................................10177
-Look up table with window size of 14 days with Rg VPD Tair
-43
-Look up table with window size of 7 days with Rg
-21
-Finished gap filling of 'LE' in 4 seconds. Artificial gaps filled: 10241, real gaps filled: 11120, unfilled (long) gaps: 7279.
-Ustar filtering (u * Th_1 = 0.217740377535423), marked 41% of the data as gap
-Initialized variable 'LE' with 11457 real gaps for gap filling of all 10241 values (to estimate uncertainties).
-Full MDS algorithm for gap filling of 'LE.Ustar_U95_fqc_0' with LUT(Rg, VPD, Tair) and MDC.
-Look up table with window size of 7 days with Rg VPD Tair
-............................................................
-...........................................10169
-Look up table with window size of 14 days with Rg VPD Tair
-51
-Look up table with window size of 7 days with Rg
-21
-Finished gap filling of 'LE' in 5 seconds. Artificial gaps filled: 10241, real gaps filled: 11457, unfilled (long) gaps: 7279.
-Ustar filtering (u * Th_1 = 0.18831983457009), marked 39% of the data as gap
-Initialized variable 'H' with 10610 real gaps for gap filling of all 10241 values (to estimate uncertainties).
-Full MDS algorithm for gap filling of 'H.Ustar_uStar_fqc_0' with LUT(Rg, VPD, Tair) and MDC.
-Look up table with window size of 7 days with Rg VPD Tair
-............................................................
-...........................................10180
-Look up table with window size of 14 days with Rg VPD Tair
-41
-Look up table with window size of 7 days with Rg
-20
-Finished gap filling of 'H' in 5 seconds. Artificial gaps filled: 10241, real gaps filled: 10610, unfilled (long) gaps: 7279.
-Ustar filtering (u * Th_1 = 0.119463803491497), marked 35% of the data as gap
-Initialized variable 'H' with 9790 real gaps for gap filling of all 10241 values (to estimate uncertainties).
-Full MDS algorithm for gap filling of 'H.Ustar_U05_fqc_0' with LUT(Rg, VPD, Tair) and MDC.
-Look up table with window size of 7 days with Rg VPD Tair
-............................................................
-...........................................10206
-Look up table with window size of 14 days with Rg VPD Tair
-15
-Look up table with window size of 7 days with Rg
-20
-Finished gap filling of 'H' in 5 seconds. Artificial gaps filled: 10241, real gaps filled: 9790, unfilled (long) gaps: 7279.
-Ustar filtering (u * Th_1 = 0.175976952626592), marked 38% of the data as gap
-Initialized variable 'H' with 10463 real gaps for gap filling of all 10241 values (to estimate uncertainties).
-Full MDS algorithm for gap filling of 'H.Ustar_U50_fqc_0' with LUT(Rg, VPD, Tair) and MDC.
-Look up table with window size of 7 days with Rg VPD Tair
-............................................................
-...........................................10184
-Look up table with window size of 14 days with Rg VPD Tair
-37
-Look up table with window size of 7 days with Rg
-20
-Finished gap filling of 'H' in 6 seconds. Artificial gaps filled: 10241, real gaps filled: 10463, unfilled (long) gaps: 7279.
-Ustar filtering (u * Th_1 = 0.217740377535423), marked 41% of the data as gap
-Initialized variable 'H' with 10909 real gaps for gap filling of all 10241 values (to estimate uncertainties).
-Full MDS algorithm for gap filling of 'H.Ustar_U95_fqc_0' with LUT(Rg, VPD, Tair) and MDC.
-Look up table with window size of 7 days with Rg VPD Tair
-............................................................
-...........................................10177
+...........................................10192
 Look up table with window size of 14 days with Rg VPD Tair
 44
 Look up table with window size of 7 days with Rg
-20
-Finished gap filling of 'H' in 5 seconds. Artificial gaps filled: 10241, real gaps filled: 10909, unfilled (long) gaps: 7279.
+3
+Mean diurnal course with window size of 0 days: .
+2
+Finished gap filling of 'NEE' in 6 seconds. Artificial gaps filled: 10241, real gaps filled: 10665, unfilled (long) gaps: 7279.
+Ustar filtering (u * Th_1 = 0.224885712936521), marked 42% of the data as gap
+Initialized variable 'NEE' with 11155 real gaps for gap filling of all 10241 values (to estimate uncertainties).
+Full MDS algorithm for gap filling of 'NEE.Ustar_U95_fqc_0' with LUT(Rg, VPD, Tair) and MDC.
+Look up table with window size of 7 days with Rg VPD Tair
+............................................................
+...........................................10186
+Look up table with window size of 14 days with Rg VPD Tair
+50
+Look up table with window size of 7 days with Rg
+3
+Mean diurnal course with window size of 0 days: .
+2
+Finished gap filling of 'NEE' in 6 seconds. Artificial gaps filled: 10241, real gaps filled: 11155, unfilled (long) gaps: 7279.
 Ustar filtering (u * Th_1 = 0.18831983457009), marked 39% of the data as gap
-Initialized variable 'FCH4' with 12517 real gaps for gap filling of all 10241 values (to estimate uncertainties).
+Initialized variable 'FC' with 10800 real gaps for gap filling of all 10241 values (to estimate uncertainties).
+Full MDS algorithm for gap filling of 'FC.Ustar_uStar_fqc_0' with LUT(Rg, VPD, Tair) and MDC.
+Look up table with window size of 7 days with Rg VPD Tair
+............................................................
+...........................................10191
+Look up table with window size of 14 days with Rg VPD Tair
+45
+Look up table with window size of 7 days with Rg
+3
+Mean diurnal course with window size of 0 days: .
+2
+Finished gap filling of 'FC' in 6 seconds. Artificial gaps filled: 10241, real gaps filled: 10800, unfilled (long) gaps: 7279.
+Ustar filtering (u * Th_1 = 0.123977831784974), marked 35% of the data as gap
+Initialized variable 'FC' with 10078 real gaps for gap filling of all 10241 values (to estimate uncertainties).
+Full MDS algorithm for gap filling of 'FC.Ustar_U05_fqc_0' with LUT(Rg, VPD, Tair) and MDC.
+Look up table with window size of 7 days with Rg VPD Tair
+............................................................
+...........................................10211
+Look up table with window size of 14 days with Rg VPD Tair
+25
+Look up table with window size of 7 days with Rg
+3
+Mean diurnal course with window size of 0 days: .
+2
+Finished gap filling of 'FC' in 7 seconds. Artificial gaps filled: 10241, real gaps filled: 10078, unfilled (long) gaps: 7279.
+Ustar filtering (u * Th_1 = 0.176806783037526), marked 39% of the data as gap
+Initialized variable 'FC' with 10665 real gaps for gap filling of all 10241 values (to estimate uncertainties).
+Full MDS algorithm for gap filling of 'FC.Ustar_U50_fqc_0' with LUT(Rg, VPD, Tair) and MDC.
+Look up table with window size of 7 days with Rg VPD Tair
+............................................................
+...........................................10192
+Look up table with window size of 14 days with Rg VPD Tair
+44
+Look up table with window size of 7 days with Rg
+3
+Mean diurnal course with window size of 0 days: .
+2
+Finished gap filling of 'FC' in 6 seconds. Artificial gaps filled: 10241, real gaps filled: 10665, unfilled (long) gaps: 7279.
+Ustar filtering (u * Th_1 = 0.224885712936521), marked 42% of the data as gap
+Initialized variable 'FC' with 11155 real gaps for gap filling of all 10241 values (to estimate uncertainties).
+Full MDS algorithm for gap filling of 'FC.Ustar_U95_fqc_0' with LUT(Rg, VPD, Tair) and MDC.
+Look up table with window size of 7 days with Rg VPD Tair
+............................................................
+...........................................10186
+Look up table with window size of 14 days with Rg VPD Tair
+50
+Look up table with window size of 7 days with Rg
+3
+Mean diurnal course with window size of 0 days: .
+2
+Finished gap filling of 'FC' in 6 seconds. Artificial gaps filled: 10241, real gaps filled: 11155, unfilled (long) gaps: 7279.
+Ustar filtering (u * Th_1 = 0.18831983457009), marked 39% of the data as gap
+Initialized variable 'LE' with 11240 real gaps for gap filling of all 10241 values (to estimate uncertainties).
+Full MDS algorithm for gap filling of 'LE.Ustar_uStar_fqc_0' with LUT(Rg, VPD, Tair) and MDC.
+Look up table with window size of 7 days with Rg VPD Tair
+............................................................
+...........................................10185
+Look up table with window size of 14 days with Rg VPD Tair
+50
+Look up table with window size of 7 days with Rg
+6
+Finished gap filling of 'LE' in 6 seconds. Artificial gaps filled: 10241, real gaps filled: 11240, unfilled (long) gaps: 7279.
+Ustar filtering (u * Th_1 = 0.123977831784974), marked 35% of the data as gap
+Initialized variable 'LE' with 10651 real gaps for gap filling of all 10241 values (to estimate uncertainties).
+Full MDS algorithm for gap filling of 'LE.Ustar_U05_fqc_0' with LUT(Rg, VPD, Tair) and MDC.
+Look up table with window size of 7 days with Rg VPD Tair
+............................................................
+...........................................10218
+Look up table with window size of 14 days with Rg VPD Tair
+17
+Look up table with window size of 7 days with Rg
+6
+Finished gap filling of 'LE' in 6 seconds. Artificial gaps filled: 10241, real gaps filled: 10651, unfilled (long) gaps: 7279.
+Ustar filtering (u * Th_1 = 0.176806783037526), marked 39% of the data as gap
+Initialized variable 'LE' with 11127 real gaps for gap filling of all 10241 values (to estimate uncertainties).
+Full MDS algorithm for gap filling of 'LE.Ustar_U50_fqc_0' with LUT(Rg, VPD, Tair) and MDC.
+Look up table with window size of 7 days with Rg VPD Tair
+............................................................
+...........................................10191
+Look up table with window size of 14 days with Rg VPD Tair
+44
+Look up table with window size of 7 days with Rg
+6
+Finished gap filling of 'LE' in 6 seconds. Artificial gaps filled: 10241, real gaps filled: 11127, unfilled (long) gaps: 7279.
+Ustar filtering (u * Th_1 = 0.224885712936521), marked 42% of the data as gap
+Initialized variable 'LE' with 11519 real gaps for gap filling of all 10241 values (to estimate uncertainties).
+Full MDS algorithm for gap filling of 'LE.Ustar_U95_fqc_0' with LUT(Rg, VPD, Tair) and MDC.
+Look up table with window size of 7 days with Rg VPD Tair
+............................................................
+...........................................10184
+Look up table with window size of 14 days with Rg VPD Tair
+51
+Look up table with window size of 7 days with Rg
+6
+Finished gap filling of 'LE' in 6 seconds. Artificial gaps filled: 10241, real gaps filled: 11519, unfilled (long) gaps: 7279.
+Ustar filtering (u * Th_1 = 0.18831983457009), marked 39% of the data as gap
+Initialized variable 'H' with 10607 real gaps for gap filling of all 10241 values (to estimate uncertainties).
+Full MDS algorithm for gap filling of 'H.Ustar_uStar_fqc_0' with LUT(Rg, VPD, Tair) and MDC.
+Look up table with window size of 7 days with Rg VPD Tair
+............................................................
+...........................................10194
+Look up table with window size of 14 days with Rg VPD Tair
+41
+Look up table with window size of 7 days with Rg
+6
+Finished gap filling of 'H' in 6 seconds. Artificial gaps filled: 10241, real gaps filled: 10607, unfilled (long) gaps: 7279.
+Ustar filtering (u * Th_1 = 0.123977831784974), marked 35% of the data as gap
+Initialized variable 'H' with 9851 real gaps for gap filling of all 10241 values (to estimate uncertainties).
+Full MDS algorithm for gap filling of 'H.Ustar_U05_fqc_0' with LUT(Rg, VPD, Tair) and MDC.
+Look up table with window size of 7 days with Rg VPD Tair
+............................................................
+...........................................10219
+Look up table with window size of 14 days with Rg VPD Tair
+16
+Look up table with window size of 7 days with Rg
+6
+Finished gap filling of 'H' in 6 seconds. Artificial gaps filled: 10241, real gaps filled: 9851, unfilled (long) gaps: 7279.
+Ustar filtering (u * Th_1 = 0.176806783037526), marked 39% of the data as gap
+Initialized variable 'H' with 10470 real gaps for gap filling of all 10241 values (to estimate uncertainties).
+Full MDS algorithm for gap filling of 'H.Ustar_U50_fqc_0' with LUT(Rg, VPD, Tair) and MDC.
+Look up table with window size of 7 days with Rg VPD Tair
+............................................................
+...........................................10194
+Look up table with window size of 14 days with Rg VPD Tair
+41
+Look up table with window size of 7 days with Rg
+6
+Finished gap filling of 'H' in 6 seconds. Artificial gaps filled: 10241, real gaps filled: 10470, unfilled (long) gaps: 7279.
+Ustar filtering (u * Th_1 = 0.224885712936521), marked 42% of the data as gap
+Initialized variable 'H' with 10978 real gaps for gap filling of all 10241 values (to estimate uncertainties).
+Full MDS algorithm for gap filling of 'H.Ustar_U95_fqc_0' with LUT(Rg, VPD, Tair) and MDC.
+Look up table with window size of 7 days with Rg VPD Tair
+............................................................
+...........................................10189
+Look up table with window size of 14 days with Rg VPD Tair
+46
+Look up table with window size of 7 days with Rg
+6
+Finished gap filling of 'H' in 6 seconds. Artificial gaps filled: 10241, real gaps filled: 10978, unfilled (long) gaps: 7279.
+Ustar filtering (u * Th_1 = 0.18831983457009), marked 39% of the data as gap
+Initialized variable 'FCH4' with 12515 real gaps for gap filling of all 10241 values (to estimate uncertainties).
 Full MDS algorithm for gap filling of 'FCH4.Ustar_uStar_fqc_0' with LUT(Rg, VPD, Tair) and MDC.
 Look up table with window size of 7 days with Rg VPD Tair
 ............................................................
-...........................................10134
+...........................................10149
 Look up table with window size of 14 days with Rg VPD Tair
-.80
+80
 Look up table with window size of 7 days with Rg
-25
+10
 Mean diurnal course with window size of 0 days: .
 2
-Finished gap filling of 'FCH4' in 5 seconds. Artificial gaps filled: 10241, real gaps filled: 12517, unfilled (long) gaps: 7279.
-Ustar filtering (u * Th_1 = 0.119463803491497), marked 35% of the data as gap
-Initialized variable 'FCH4' with 12016 real gaps for gap filling of all 10241 values (to estimate uncertainties).
+Finished gap filling of 'FCH4' in 6 seconds. Artificial gaps filled: 10241, real gaps filled: 12515, unfilled (long) gaps: 7279.
+Ustar filtering (u * Th_1 = 0.123977831784974), marked 35% of the data as gap
+Initialized variable 'FCH4' with 12058 real gaps for gap filling of all 10241 values (to estimate uncertainties).
 Full MDS algorithm for gap filling of 'FCH4.Ustar_U05_fqc_0' with LUT(Rg, VPD, Tair) and MDC.
 Look up table with window size of 7 days with Rg VPD Tair
 ............................................................
-...........................................10175
+...........................................10188
 Look up table with window size of 14 days with Rg VPD Tair
-39
+41
 Look up table with window size of 7 days with Rg
-25
+10
 Mean diurnal course with window size of 0 days: .
 2
-Finished gap filling of 'FCH4' in 5 seconds. Artificial gaps filled: 10241, real gaps filled: 12016, unfilled (long) gaps: 7279.
-Ustar filtering (u * Th_1 = 0.175976952626592), marked 38% of the data as gap
-Initialized variable 'FCH4' with 12428 real gaps for gap filling of all 10241 values (to estimate uncertainties).
+Finished gap filling of 'FCH4' in 7 seconds. Artificial gaps filled: 10241, real gaps filled: 12058, unfilled (long) gaps: 7279.
+Ustar filtering (u * Th_1 = 0.176806783037526), marked 39% of the data as gap
+Initialized variable 'FCH4' with 12430 real gaps for gap filling of all 10241 values (to estimate uncertainties).
 Full MDS algorithm for gap filling of 'FCH4.Ustar_U50_fqc_0' with LUT(Rg, VPD, Tair) and MDC.
 Look up table with window size of 7 days with Rg VPD Tair
 ............................................................
-...........................................10154
+...........................................10168
 Look up table with window size of 14 days with Rg VPD Tair
-60
+61
 Look up table with window size of 7 days with Rg
-25
+10
 Mean diurnal course with window size of 0 days: .
 2
-Finished gap filling of 'FCH4' in 5 seconds. Artificial gaps filled: 10241, real gaps filled: 12428, unfilled (long) gaps: 7279.
-Ustar filtering (u * Th_1 = 0.217740377535423), marked 41% of the data as gap
-Initialized variable 'FCH4' with 12696 real gaps for gap filling of all 10241 values (to estimate uncertainties).
+Finished gap filling of 'FCH4' in 7 seconds. Artificial gaps filled: 10241, real gaps filled: 12430, unfilled (long) gaps: 7279.
+Ustar filtering (u * Th_1 = 0.224885712936521), marked 42% of the data as gap
+Initialized variable 'FCH4' with 12729 real gaps for gap filling of all 10241 values (to estimate uncertainties).
 Full MDS algorithm for gap filling of 'FCH4.Ustar_U95_fqc_0' with LUT(Rg, VPD, Tair) and MDC.
 Look up table with window size of 7 days with Rg VPD Tair
 ............................................................
-...........................................10132
+...........................................10147
 Look up table with window size of 14 days with Rg VPD Tair
-.82
+82
 Look up table with window size of 7 days with Rg
-25
+10
 Mean diurnal course with window size of 0 days: .
 2
-Finished gap filling of 'FCH4' in 5 seconds. Artificial gaps filled: 10241, real gaps filled: 12696, unfilled (long) gaps: 7279.
+Finished gap filling of 'FCH4' in 6 seconds. Artificial gaps filled: 10241, real gaps filled: 12729, unfilled (long) gaps: 7279.
 Initialized variable 'Tair' with 6074 real gaps for gap filling.
 Limited MDS algorithm for gap filling of 'Tair' with LUT(Rg only) and MDC.
 Look up table with window size of 7 days with Rg
 ............................................................
-.3870
+.3871
 Mean diurnal course with window size of 0 days: .
 ......................0
 Mean diurnal course with window size of 1 days: .
@@ -294,15 +294,15 @@ Mean diurnal course with window size of 1 days: .
 Mean diurnal course with window size of 2 days: .
 .....................45
 Look up table with window size of 14 days with Rg
-.....................1039
+.....................1038
 Look up table with window size of 21 days with Rg
 ..........338
 Look up table with window size of 28 days with Rg
 .......338
 Look up table with window size of 35 days with Rg
-....338
+....337
 Look up table with window size of 42 days with Rg
-52
+53
 Look up table with window size of 49 days with Rg
 0
 Look up table with window size of 56 days with Rg
@@ -313,12 +313,39 @@ Look up table with window size of 70 days with Rg
 0
 Mean diurnal course with window size of 7 days: .
 25
-Finished gap filling of 'Tair' in 3 seconds. Artificial gaps filled: 17520, real gaps filled: 6074, unfilled (long) gaps: 0.
-Initialized variable 'VPD' with 7264 real gaps for gap filling.
+Finished gap filling of 'Tair' in 4 seconds. Artificial gaps filled: 17520, real gaps filled: 6074, unfilled (long) gaps: 0.
+Initialized variable 'VPD' with 6075 real gaps for gap filling.
 Limited MDS algorithm for gap filling of 'VPD' with LUT(Rg only) and MDC.
 Look up table with window size of 7 days with Rg
-16
-Finished gap filling of 'VPD' in 0 seconds. Artificial gaps filled: 10272, real gaps filled: 7264, unfilled (long) gaps: 7248.
+............................................................
+.3872
+Mean diurnal course with window size of 0 days: .
+......................0
+Mean diurnal course with window size of 1 days: .
+......................29
+Mean diurnal course with window size of 2 days: .
+.....................44
+Look up table with window size of 14 days with Rg
+.....................1038
+Look up table with window size of 21 days with Rg
+..........338
+Look up table with window size of 28 days with Rg
+.......338
+Look up table with window size of 35 days with Rg
+....337
+Look up table with window size of 42 days with Rg
+53
+Look up table with window size of 49 days with Rg
+0
+Look up table with window size of 56 days with Rg
+0
+Look up table with window size of 63 days with Rg
+0
+Look up table with window size of 70 days with Rg
+0
+Mean diurnal course with window size of 7 days: .
+26
+Finished gap filling of 'VPD' in 4 seconds. Artificial gaps filled: 17520, real gaps filled: 6075, unfilled (long) gaps: 0.
 Initialized variable 'Rg' with 48 real gaps for gap filling.
 Restriced MDS algorithm for gap filling of 'Rg' with no meteo conditions and hence only MDC.
 Mean diurnal course with window size of 0 days: .
@@ -327,16 +354,16 @@ Mean diurnal course with window size of 1 days: .
 46
 Finished gap filling of 'Rg' in 0 seconds. Artificial gaps filled: 17520, real gaps filled: 48, unfilled (long) gaps: 0.
 Start flux partitioning for variable NEE_U05_f with temperature Tair_f.
-Estimate of the temperature sensitivity E_0 from short term data: 131.48.
+Estimate of the temperature sensitivity E_0 from short term data: 83.24.
 Regression of reference temperature R_ref for 54 periods.
 Start flux partitioning for variable NEE_U50_f with temperature Tair_f.
-Estimate of the temperature sensitivity E_0 from short term data: 116.85.
+Estimate of the temperature sensitivity E_0 from short term data: 126.39.
 Regression of reference temperature R_ref for 54 periods.
 Start flux partitioning for variable NEE_U95_f with temperature Tair_f.
-Estimate of the temperature sensitivity E_0 from short term data: 76.94.
+Estimate of the temperature sensitivity E_0 from short term data: 92.18.
 Regression of reference temperature R_ref for 54 periods.
 Start flux partitioning for variable NEE_uStar_f with temperature Tair_f.
-Estimate of the temperature sensitivity E_0 from short term data: 108.61.
+Estimate of the temperature sensitivity E_0 from short term data: 115.55.
 Regression of reference temperature R_ref for 54 periods.
 Start daytime flux partitioning for variable NEE_U05_f with temperature Tair_f.
   Estimating temperature sensitivity from night time NEE , 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 45, 47, 49, 51, 53, 55, 57, 59, 61, 63, 65, 67, 69, 71, 73, 75, 77, 79, 81, 83, 85, 87, 89, 91, 93, 95, 97, 99, 101, 103, 105, 107, 109, 111, 113, 115, 117, 119, 121, 123, 125, 127, 129, 131, 133, 135, 137, 139, 141, 143, 145, 147, 149, 151, 153, 155, 157, 159, 161, 163, 165, 167, 169, 171, 173, 175, 177, 179, 181, 183, 185, 187, 189, 191, 193, 195, 197, 199, 201, 203, 205, 207, 209, 211, 213, 215, 217, 219, 221, 223, 225, 227, 229, 231, 233, 235, 237, 239, 241, 243, 245, 247, 249, 251, 253, 255, 257, 259, 261, 263, 265, 267, 269, 271, 273, 275, 277, 279, 281, 283, 285, 287, 289, 291, 293, 295, 297, 299, 301, 303, 305, 307, 309, 311, 313, 315, 317, 319, 321, 323, 325, 327, 329, 331, 333, 335, 337, 339, 341, 343, 345, 347, 349, 351, 353, 355, 357, 359, 361, 363
@@ -394,13 +421,13 @@ The following object is masked from 'package:purrr':
 
     lift
 
-There were 50 or more warnings (use warnings() to see the first 50)
+There were 49 warnings (use warnings() to see them)
 =============================================================================
  Warnings
 =============================================================================
 Warning messages:
 1: In fCheckOutsideRange(Data.F, VarName.V.s[v.i], c("<",  ... :
-  sEddyProc.initialize:::fCheckColPlausibility:::fCheckOutsideRange::: Variable outside (plausible) range in 4647 cases! Invalid values with 'Rg < 0': -0.189, -0.081, -0.314, -0.024, -0.106, -0.114, -0.147, -0.018, -0.052, -1.211, -0.481, -0.029, -0.083, -0.031, -0.262, -0.591, -0.860, -0.876, -0.228, -0.076, -0.402, -0.632, -0.835, -0.684, -0.789, -0.584, -0.485, -0.546, -0.797, -0.852, -0.972, -0.835, -0.602, -0.633, -0.595, -0.671, -0.357, -0.331, -0.283, -0.257, -0.517, -0.730, -0.599, -0.643, -0.482, -0.484, -0.500, -0.239, -0.681, -0.722 ...
+  sEddyProc.initialize:::fCheckColPlausibility:::fCheckOutsideRange::: Variable outside (plausible) range in 4555 cases! Invalid values with 'Rg < 0': -0.1744, -0.0663, -0.2990, -0.0089, -0.0914, -0.0996, -0.1324, -0.0030, -0.0374, -1.1940, -0.4650, -0.0144, -0.0685, -0.0160, -0.2470, -0.5747, -0.8434, -0.8598, -0.2127, -0.0617, -0.3862, -0.6156, -0.8188, -0.6680, -0.7729, -0.5681, -0.4697, -0.5304, -0.7811, -0.8352, -0.9549, -0.8188, -0.5866, -0.6171, -0.5795, -0.6549, -0.3419, -0.3157, -0.2682, -0.2419, -0.5009, -0.7139, -0.5828, -0.6271, -0.4665, -0.4681, -0.4845, -0.2239, -0.6648, -0.7057 ...
 2: In .estimateUStarSeason(...) :
   sEstUstarThreshold: too few finite records within season (n = 0). Need at least n = 160. Returning NA for this Season.
 3: In .estimateUStarSeason(...) :
@@ -493,27 +520,25 @@ Warning messages:
             , " setups on the same dataset!
 39: In sFillInit(Var, QFVar, QFValue, FillAll) :
   sMDSGapFill::: The long gap between position 1 and 7279 will not be filled!
-40: In sFillInit(Var, QFVar, QFValue, FillAll) :
-  sMDSGapFill::: The long gap between position 1 and 7248 will not be filled!
+40: In fCheckOutsideRange(Data.F, VarName.V.s[v.i], c("<",  ... :
+  sMRFluxPartition:::fCheckColPlausibility:::fCheckOutsideRange::: Variable outside (plausible) range in 4555 cases! Invalid values with 'Rg < 0': -0.1744, -0.0663, -0.2990, -0.0089, -0.0914, -0.0996, -0.1324, -0.0030, -0.0374, -1.1940, -0.4650, -0.0144, -0.0685, -0.0160, -0.2470, -0.5747, -0.8434, -0.8598, -0.2127, -0.0617, -0.3862, -0.6156, -0.8188, -0.6680, -0.7729, -0.5681, -0.4697, -0.5304, -0.7811, -0.8352, -0.9549, -0.8188, -0.5866, -0.6171, -0.5795, -0.6549, -0.3419, -0.3157, -0.2682, -0.2419, -0.5009, -0.7139, -0.5828, -0.6271, -0.4665, -0.4681, -0.4845, -0.2239, -0.6648, -0.7057 ...
 41: In fCheckOutsideRange(Data.F, VarName.V.s[v.i], c("<",  ... :
-  sMRFluxPartition:::fCheckColPlausibility:::fCheckOutsideRange::: Variable outside (plausible) range in 4647 cases! Invalid values with 'Rg < 0': -0.189, -0.081, -0.314, -0.024, -0.106, -0.114, -0.147, -0.018, -0.052, -1.211, -0.481, -0.029, -0.083, -0.031, -0.262, -0.591, -0.860, -0.876, -0.228, -0.076, -0.402, -0.632, -0.835, -0.684, -0.789, -0.584, -0.485, -0.546, -0.797, -0.852, -0.972, -0.835, -0.602, -0.633, -0.595, -0.671, -0.357, -0.331, -0.283, -0.257, -0.517, -0.730, -0.599, -0.643, -0.482, -0.484, -0.500, -0.239, -0.681, -0.722 ...
+  sMRFluxPartition:::fCheckColPlausibility:::fCheckOutsideRange::: Variable outside (plausible) range in 4555 cases! Invalid values with 'Rg < 0': -0.1744, -0.0663, -0.2990, -0.0089, -0.0914, -0.0996, -0.1324, -0.0030, -0.0374, -1.1940, -0.4650, -0.0144, -0.0685, -0.0160, -0.2470, -0.5747, -0.8434, -0.8598, -0.2127, -0.0617, -0.3862, -0.6156, -0.8188, -0.6680, -0.7729, -0.5681, -0.4697, -0.5304, -0.7811, -0.8352, -0.9549, -0.8188, -0.5866, -0.6171, -0.5795, -0.6549, -0.3419, -0.3157, -0.2682, -0.2419, -0.5009, -0.7139, -0.5828, -0.6271, -0.4665, -0.4681, -0.4845, -0.2239, -0.6648, -0.7057 ...
 42: In fCheckOutsideRange(Data.F, VarName.V.s[v.i], c("<",  ... :
-  sMRFluxPartition:::fCheckColPlausibility:::fCheckOutsideRange::: Variable outside (plausible) range in 4647 cases! Invalid values with 'Rg < 0': -0.189, -0.081, -0.314, -0.024, -0.106, -0.114, -0.147, -0.018, -0.052, -1.211, -0.481, -0.029, -0.083, -0.031, -0.262, -0.591, -0.860, -0.876, -0.228, -0.076, -0.402, -0.632, -0.835, -0.684, -0.789, -0.584, -0.485, -0.546, -0.797, -0.852, -0.972, -0.835, -0.602, -0.633, -0.595, -0.671, -0.357, -0.331, -0.283, -0.257, -0.517, -0.730, -0.599, -0.643, -0.482, -0.484, -0.500, -0.239, -0.681, -0.722 ...
+  sMRFluxPartition:::fCheckColPlausibility:::fCheckOutsideRange::: Variable outside (plausible) range in 4555 cases! Invalid values with 'Rg < 0': -0.1744, -0.0663, -0.2990, -0.0089, -0.0914, -0.0996, -0.1324, -0.0030, -0.0374, -1.1940, -0.4650, -0.0144, -0.0685, -0.0160, -0.2470, -0.5747, -0.8434, -0.8598, -0.2127, -0.0617, -0.3862, -0.6156, -0.8188, -0.6680, -0.7729, -0.5681, -0.4697, -0.5304, -0.7811, -0.8352, -0.9549, -0.8188, -0.5866, -0.6171, -0.5795, -0.6549, -0.3419, -0.3157, -0.2682, -0.2419, -0.5009, -0.7139, -0.5828, -0.6271, -0.4665, -0.4681, -0.4845, -0.2239, -0.6648, -0.7057 ...
 43: In fCheckOutsideRange(Data.F, VarName.V.s[v.i], c("<",  ... :
-  sMRFluxPartition:::fCheckColPlausibility:::fCheckOutsideRange::: Variable outside (plausible) range in 4647 cases! Invalid values with 'Rg < 0': -0.189, -0.081, -0.314, -0.024, -0.106, -0.114, -0.147, -0.018, -0.052, -1.211, -0.481, -0.029, -0.083, -0.031, -0.262, -0.591, -0.860, -0.876, -0.228, -0.076, -0.402, -0.632, -0.835, -0.684, -0.789, -0.584, -0.485, -0.546, -0.797, -0.852, -0.972, -0.835, -0.602, -0.633, -0.595, -0.671, -0.357, -0.331, -0.283, -0.257, -0.517, -0.730, -0.599, -0.643, -0.482, -0.484, -0.500, -0.239, -0.681, -0.722 ...
+  sMRFluxPartition:::fCheckColPlausibility:::fCheckOutsideRange::: Variable outside (plausible) range in 4555 cases! Invalid values with 'Rg < 0': -0.1744, -0.0663, -0.2990, -0.0089, -0.0914, -0.0996, -0.1324, -0.0030, -0.0374, -1.1940, -0.4650, -0.0144, -0.0685, -0.0160, -0.2470, -0.5747, -0.8434, -0.8598, -0.2127, -0.0617, -0.3862, -0.6156, -0.8188, -0.6680, -0.7729, -0.5681, -0.4697, -0.5304, -0.7811, -0.8352, -0.9549, -0.8188, -0.5866, -0.6171, -0.5795, -0.6549, -0.3419, -0.3157, -0.2682, -0.2419, -0.5009, -0.7139, -0.5828, -0.6271, -0.4665, -0.4681, -0.4845, -0.2239, -0.6648, -0.7057 ...
 44: In fCheckOutsideRange(Data.F, VarName.V.s[v.i], c("<",  ... :
-  sMRFluxPartition:::fCheckColPlausibility:::fCheckOutsideRange::: Variable outside (plausible) range in 4647 cases! Invalid values with 'Rg < 0': -0.189, -0.081, -0.314, -0.024, -0.106, -0.114, -0.147, -0.018, -0.052, -1.211, -0.481, -0.029, -0.083, -0.031, -0.262, -0.591, -0.860, -0.876, -0.228, -0.076, -0.402, -0.632, -0.835, -0.684, -0.789, -0.584, -0.485, -0.546, -0.797, -0.852, -0.972, -0.835, -0.602, -0.633, -0.595, -0.671, -0.357, -0.331, -0.283, -0.257, -0.517, -0.730, -0.599, -0.643, -0.482, -0.484, -0.500, -0.239, -0.681, -0.722 ...
+  sGLFluxPartition:::fCheckColPlausibility:::fCheckOutsideRange::: Variable outside (plausible) range in 4555 cases! Invalid values with 'Rg_f < 0': -0.1744, -0.0663, -0.2990, -0.0089, -0.0914, -0.0996, -0.1324, -0.0030, -0.0374, -1.1940, -0.4650, -0.0144, -0.0685, -0.0160, -0.2470, -0.5747, -0.8434, -0.8598, -0.2127, -0.0617, -0.3862, -0.6156, -0.8188, -0.6680, -0.7729, -0.5681, -0.4697, -0.5304, -0.7811, -0.8352, -0.9549, -0.8188, -0.5866, -0.6171, -0.5795, -0.6549, -0.3419, -0.3157, -0.2682, -0.2419, -0.5009, -0.7139, -0.5828, -0.6271, -0.4665, -0.4681, -0.4845, -0.2239, -0.6648, -0.7057 ...
 45: In fCheckOutsideRange(Data.F, VarName.V.s[v.i], c("<",  ... :
-  sGLFluxPartition:::fCheckColPlausibility:::fCheckOutsideRange::: Variable outside (plausible) range in 4647 cases! Invalid values with 'Rg_f < 0': -0.189, -0.081, -0.314, -0.024, -0.106, -0.114, -0.147, -0.018, -0.052, -1.211, -0.481, -0.029, -0.083, -0.031, -0.262, -0.591, -0.860, -0.876, -0.228, -0.076, -0.402, -0.632, -0.835, -0.684, -0.789, -0.584, -0.485, -0.546, -0.797, -0.852, -0.972, -0.835, -0.602, -0.633, -0.595, -0.671, -0.357, -0.331, -0.283, -0.257, -0.517, -0.730, -0.599, -0.643, -0.482, -0.484, -0.500, -0.239, -0.681, -0.722 ...
+  sGLFluxPartition:::fCheckColPlausibility:::fCheckOutsideRange::: Variable outside (plausible) range in 4555 cases! Invalid values with 'Rg_f < 0': -0.1744, -0.0663, -0.2990, -0.0089, -0.0914, -0.0996, -0.1324, -0.0030, -0.0374, -1.1940, -0.4650, -0.0144, -0.0685, -0.0160, -0.2470, -0.5747, -0.8434, -0.8598, -0.2127, -0.0617, -0.3862, -0.6156, -0.8188, -0.6680, -0.7729, -0.5681, -0.4697, -0.5304, -0.7811, -0.8352, -0.9549, -0.8188, -0.5866, -0.6171, -0.5795, -0.6549, -0.3419, -0.3157, -0.2682, -0.2419, -0.5009, -0.7139, -0.5828, -0.6271, -0.4665, -0.4681, -0.4845, -0.2239, -0.6648, -0.7057 ...
 46: In fCheckOutsideRange(Data.F, VarName.V.s[v.i], c("<",  ... :
-  sGLFluxPartition:::fCheckColPlausibility:::fCheckOutsideRange::: Variable outside (plausible) range in 4647 cases! Invalid values with 'Rg_f < 0': -0.189, -0.081, -0.314, -0.024, -0.106, -0.114, -0.147, -0.018, -0.052, -1.211, -0.481, -0.029, -0.083, -0.031, -0.262, -0.591, -0.860, -0.876, -0.228, -0.076, -0.402, -0.632, -0.835, -0.684, -0.789, -0.584, -0.485, -0.546, -0.797, -0.852, -0.972, -0.835, -0.602, -0.633, -0.595, -0.671, -0.357, -0.331, -0.283, -0.257, -0.517, -0.730, -0.599, -0.643, -0.482, -0.484, -0.500, -0.239, -0.681, -0.722 ...
+  sGLFluxPartition:::fCheckColPlausibility:::fCheckOutsideRange::: Variable outside (plausible) range in 4555 cases! Invalid values with 'Rg_f < 0': -0.1744, -0.0663, -0.2990, -0.0089, -0.0914, -0.0996, -0.1324, -0.0030, -0.0374, -1.1940, -0.4650, -0.0144, -0.0685, -0.0160, -0.2470, -0.5747, -0.8434, -0.8598, -0.2127, -0.0617, -0.3862, -0.6156, -0.8188, -0.6680, -0.7729, -0.5681, -0.4697, -0.5304, -0.7811, -0.8352, -0.9549, -0.8188, -0.5866, -0.6171, -0.5795, -0.6549, -0.3419, -0.3157, -0.2682, -0.2419, -0.5009, -0.7139, -0.5828, -0.6271, -0.4665, -0.4681, -0.4845, -0.2239, -0.6648, -0.7057 ...
 47: In fCheckOutsideRange(Data.F, VarName.V.s[v.i], c("<",  ... :
-  sGLFluxPartition:::fCheckColPlausibility:::fCheckOutsideRange::: Variable outside (plausible) range in 4647 cases! Invalid values with 'Rg_f < 0': -0.189, -0.081, -0.314, -0.024, -0.106, -0.114, -0.147, -0.018, -0.052, -1.211, -0.481, -0.029, -0.083, -0.031, -0.262, -0.591, -0.860, -0.876, -0.228, -0.076, -0.402, -0.632, -0.835, -0.684, -0.789, -0.584, -0.485, -0.546, -0.797, -0.852, -0.972, -0.835, -0.602, -0.633, -0.595, -0.671, -0.357, -0.331, -0.283, -0.257, -0.517, -0.730, -0.599, -0.643, -0.482, -0.484, -0.500, -0.239, -0.681, -0.722 ...
+  sGLFluxPartition:::fCheckColPlausibility:::fCheckOutsideRange::: Variable outside (plausible) range in 4555 cases! Invalid values with 'Rg_f < 0': -0.1744, -0.0663, -0.2990, -0.0089, -0.0914, -0.0996, -0.1324, -0.0030, -0.0374, -1.1940, -0.4650, -0.0144, -0.0685, -0.0160, -0.2470, -0.5747, -0.8434, -0.8598, -0.2127, -0.0617, -0.3862, -0.6156, -0.8188, -0.6680, -0.7729, -0.5681, -0.4697, -0.5304, -0.7811, -0.8352, -0.9549, -0.8188, -0.5866, -0.6171, -0.5795, -0.6549, -0.3419, -0.3157, -0.2682, -0.2419, -0.5009, -0.7139, -0.5828, -0.6271, -0.4665, -0.4681, -0.4845, -0.2239, -0.6648, -0.7057 ...
 48: In fCheckOutsideRange(Data.F, VarName.V.s[v.i], c("<",  ... :
-  sGLFluxPartition:::fCheckColPlausibility:::fCheckOutsideRange::: Variable outside (plausible) range in 4647 cases! Invalid values with 'Rg_f < 0': -0.189, -0.081, -0.314, -0.024, -0.106, -0.114, -0.147, -0.018, -0.052, -1.211, -0.481, -0.029, -0.083, -0.031, -0.262, -0.591, -0.860, -0.876, -0.228, -0.076, -0.402, -0.632, -0.835, -0.684, -0.789, -0.584, -0.485, -0.546, -0.797, -0.852, -0.972, -0.835, -0.602, -0.633, -0.595, -0.671, -0.357, -0.331, -0.283, -0.257, -0.517, -0.730, -0.599, -0.643, -0.482, -0.484, -0.500, -0.239, -0.681, -0.722 ...
-49: In fCheckOutsideRange(Data.F, VarName.V.s[v.i], c("<",  ... :
-  sGLFluxPartition:::fCheckColPlausibility:::fCheckOutsideRange::: Variable outside (plausible) range in 4647 cases! Invalid values with 'Rg_f < 0': -0.189, -0.081, -0.314, -0.024, -0.106, -0.114, -0.147, -0.018, -0.052, -1.211, -0.481, -0.029, -0.083, -0.031, -0.262, -0.591, -0.860, -0.876, -0.228, -0.076, -0.402, -0.632, -0.835, -0.684, -0.789, -0.584, -0.485, -0.546, -0.797, -0.852, -0.972, -0.835, -0.602, -0.633, -0.595, -0.671, -0.357, -0.331, -0.283, -0.257, -0.517, -0.730, -0.599, -0.643, -0.482, -0.484, -0.500, -0.239, -0.681, -0.722 ...
-50: Using an external vector in selections was deprecated in tidyselect 1.1.0.
+  sGLFluxPartition:::fCheckColPlausibility:::fCheckOutsideRange::: Variable outside (plausible) range in 4555 cases! Invalid values with 'Rg_f < 0': -0.1744, -0.0663, -0.2990, -0.0089, -0.0914, -0.0996, -0.1324, -0.0030, -0.0374, -1.1940, -0.4650, -0.0144, -0.0685, -0.0160, -0.2470, -0.5747, -0.8434, -0.8598, -0.2127, -0.0617, -0.3862, -0.6156, -0.8188, -0.6680, -0.7729, -0.5681, -0.4697, -0.5304, -0.7811, -0.8352, -0.9549, -0.8188, -0.5866, -0.6171, -0.5795, -0.6549, -0.3419, -0.3157, -0.2682, -0.2419, -0.5009, -0.7139, -0.5828, -0.6271, -0.4665, -0.4681, -0.4845, -0.2239, -0.6648, -0.7057 ...
+49: Using an external vector in selections was deprecated in tidyselect 1.1.0.
 i Please use `all_of()` or `any_of()` instead.
   # Was:
   data %>% select(predictor_vars)
@@ -532,7 +557,7 @@ End of Run_ThirdStageREddyProc run.
 
 =============================================================
 Rscript:      C:\Program Files\R\R-4.2.1\bin\Rscript.exe
-Start:        03-Feb-2023 14:21:55
-End:          03-Feb-2023 14:26:51
-Elapsed time:    4.9 min
+Start:        01-Mar-2023 11:30:01
+End:          01-Mar-2023 11:37:44
+Elapsed time:    7.7 min
 ==============================================================

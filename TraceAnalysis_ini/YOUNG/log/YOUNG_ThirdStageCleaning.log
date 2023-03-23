@@ -1,0 +1,53 @@
+Loading required package: dplyr
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Loading required package: lubridate
+
+Attaching package: 'lubridate'
+
+The following objects are masked from 'package:base':
+
+    date, intersect, setdiff, union
+
+
+
+In ThirdStage_REddyProc:
+   Do we need to reload the ini file here again?
+
+
+
+In ThirdStage_REddyProc:
+   Do we need to reload the ini file here again?
+
+Converted time format 'YDH' to POSIX with column name 'DateTime'.
+New sEddyProc class for site 'YOUNG'
+Error in usEstUstarThreshold(ds, seasonFactor = .self$sTEMP$season, ...) : 
+  sEstUstarThreshold: no finite records in dataset
+Calls: ThirdStage_REddyProc ... withCallingHandlers -> <Anonymous> -> usEstUstarThreshold
+In addition: Warning messages:
+1: In fCheckOutsideRange(Data.F, VarName.V.s[v.i], c("<", 0), SubCallFunc.s) :
+  sEddyProc.initialize:::fCheckColPlausibility:::fCheckOutsideRange::: Variable outside (plausible) range in 3859 cases! Invalid values with 'Rg < 0': -0.21, -0.98, -0.67, -1.09, -1.16, -0.70, -1.02, -1.41, -4.34, -2.56, -5.24, -2.67, -0.40, -2.18, -2.90, -3.09, -3.41, -5.05, -2.66, -0.74, -5.22, -4.98, -4.64, -4.24, -4.08, -3.82, -4.06, -3.98, -3.63, -3.59, -5.65, -3.54, -2.50, -2.76, -1.16, -2.71, -1.82, -5.21, -4.57, -3.82, -4.49, -4.17, -4.45, -5.52, -6.81, -3.74, -1.56, -2.50, -2.30, -2.80 ...
+2: In fCheckOutsideRange(Data.F, VarName.V.s[v.i], c(">", 1200), SubCallFunc.s) :
+  sEddyProc.initialize:::fCheckColPlausibility:::fCheckOutsideRange::: Variable outside (plausible) range in 34 cases! Invalid values with 'Rg > 1200': 1200, 1203, 1230, 1242, 1239, 1225, 1215, 1243, 1257, 1254, 1235, 1205, 1233, 1246, 1211, 1224, 1203, 1207, 1201, 1216, 1218, 1203, 1220, 1216, 1211, 1231, 1234, 1250, 1264, 1217, 1272, 1221, 1235, 1238 ...
+3: In fCheckOutsideRange(Data.F, VarName.V.s[v.i], c(">", 50), SubCallFunc.s) :
+  sEddyProc.initialize:::fCheckColPlausibility:::fCheckOutsideRange::: Variable outside (plausible) range in 928 cases! Invalid values with 'VPD > 50':  84,  76,  61,  70,  54,  57,  62,  66,  62,  93,  59,  85,  68,  66,  65,  57,  90,  99,  85,  54,  54,  58,  92,  84,  87,  89,  78, 100,  71,  53,  70,  66,  65,  80,  90,  97,  52,  53,  52,  89,  76, 100,  78,  79,  78,  74,  66,  56,  78,  80 ...
+Execution halted
+
+
+
+
+=============================================================
+Rscript:      C:\Program Files\R\R-4.2.1\bin\Rscript.exe
+Start:        07-Mar-2023 17:21:47
+End:          07-Mar-2023 17:21:52
+Elapsed time:    0.1 min
+==============================================================
