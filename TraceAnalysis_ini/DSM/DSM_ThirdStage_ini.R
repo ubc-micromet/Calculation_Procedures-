@@ -3,8 +3,8 @@
 
 # Revisions
 #
-# Mar 7, 2023 (Zoran)
-#   - change lat/long. It was set to (wrong) values:lat <- -12.8314 # Site latitude long <- -69.2836 # Site longitude
+# Apr  3, 2023 (Zoran)
+#   - changed lat/long. It was set to (wrong) values:lat <- -12.8314 # Site latitude long <- -69.2836 # Site longitude
 # Nov 7, 2022 (Zoran)
 #   - added unique() to year range to avoid year ranges where two same numbers appear
 #     (like years_REddyProc <- c(2022, 2022) which causes an error later on in ThirdStage_REddyProc).
@@ -58,8 +58,8 @@ vars_storage <- c("SC","SH","SLE","SCH4")
 tv_input <- "clean_tv"
 
 # Specify site location
-lat <- -12.8314 # Site latitude
-long <- -69.2836 # Site longitude
+lat <-  49.088750 # Site latitude
+long <- -122.895361 # Site longitude
 TimeZoneHour <- -8 # time offset (in PST) from UTC 
 
 export <- 0 # 1 to save a csv file of the data, 0 otherwise
