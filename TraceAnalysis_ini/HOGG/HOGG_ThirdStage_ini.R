@@ -19,7 +19,7 @@
 estYear <- 2021
 
 # Grab the arguments from Run_ThirdStage_REddyProc call
-args <-c("/Users/darianng/Documents/MSc_Geography/Biomet.net/R/database_functions", "/Users/darianng/Documents/MSc_Geography/Biomet_cleaning/Local_copies/Calculation_Procedures/TraceAnalysis_ini/HOGG/log/HOGG_setThirdStageCleaningParameters.R")
+#args <-c("/Users/darianng/Documents/MSc_Geography/Biomet.net/R/database_functions", "/Users/darianng/Documents/MSc_Geography/Biomet_cleaning/Local_copies/Calculation_Procedures/TraceAnalysis_ini/HOGG/log/HOGG_setThirdStageCleaningParameters.R")
 
 if(length(commandArgs(trailingOnly = TRUE))==0){
   cat("\nIn: HOGG_ThirdStage_ini:\nNo input parameters!\nUsing whatever is in args variable \n")
