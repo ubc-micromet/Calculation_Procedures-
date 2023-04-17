@@ -32,13 +32,8 @@ Converted time format 'YDH' to POSIX with column name 'DateTime'.
 New sEddyProc class for site 'DSM'
 
 Estimated UStar distribution of:
-<<<<<<< HEAD
-      uStar         5%       50%       95%
-1 0.128956 0.07689764 0.1119942 0.1420662 
-=======
         uStar         5%        50%       95%
 1 0.07103566 0.06045765 0.07936199 0.1445467 
->>>>>>> main
 by using  100 bootstrap samples and controls:
                        taClasses                    UstarClasses 
                               7                              20 
