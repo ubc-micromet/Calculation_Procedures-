@@ -3,6 +3,7 @@
 # runThirdStageCleaningREddyProc.m
 # 03-Feb-2023 14:21:55
 #--------------------------------------------------------------
+data_source <- "Micromet"
 site    <- "RBM"
 yrs     <- 2022
 db_root <- "p:/database"
