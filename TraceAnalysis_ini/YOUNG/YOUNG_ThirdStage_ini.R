@@ -3,8 +3,6 @@
 
 # Revisions
 #
-# Apr  3, 2023 (Zoran)
-#   - changed lat/long. It was set to (wrong) values:lat <- -12.8314 # Site latitude long <- -69.2836 # Site longitude
 # Nov 7, 2022 (Zoran)
 #   - added unique() to year range to avoid year ranges where two same numbers appear
 #     (like years_REddyProc <- c(2022, 2022) which causes an error later on in ThirdStage_REddyProc).
@@ -21,9 +19,10 @@
 estYear <- 2021
 
 # Grab the arguments from Run_ThirdStage_REddyProc call
+args <-c("/Users/darianng/Documents/MSc_Geography/Biomet.net/R/database_functions", "/Users/darianng/Documents/MSc_Geography/Biomet_cleaning/Local_copies/Calculation_Procedures/TraceAnalysis_ini/Young/log/YOUNG_setThirdStageCleaningParameters.R")
 
 if(length(commandArgs(trailingOnly = TRUE))==0){
-  cat("\nIn: DSM_ThirdStage_ini:\nNo input parameters!\nUsing whatever is in args variable \n")
+  cat("\nIn: YOUNG_ThirdStage_ini:\nNo input parameters!\nUsing whatever is in args variable \n")
 } else {
   # otherwise use the third argument to pass the path
   args 		<- commandArgs(trailingOnly = TRUE)
@@ -33,6 +32,7 @@ pathSetIni   		<- args[2]
 
 # load input arguments from pathInputArgs file
 source(pathSetIni)
+
 
 # Specify range of years to process
 stYear <- yrs-yearsToProcess+1
@@ -51,20 +51,20 @@ years_RF <- unique(c(stYear, edYear)) # Specify the number of years to use in RF
 # Edit the following lines for each site:
 
 # Specify variables of interest
-vars <- c("FC","LE","H","FCH4","SW_IN_1_1_1","TA_1_1_1","RH_1_1_1","VPD_1_1_1","USTAR") 
+vars <- c("NEE","FC","LE","H","FCH4","SW_IN_1_1_1","TA_1_1_1","RH_1_1_1","VPD_1_1_1","USTAR") 
 vars_storage <- c("SC","SH","SLE","SCH4") 
 
 # Specify time vector name
 tv_input <- "clean_tv"
 
 # Specify site location
-lat <-  49.088750 # Site latitude
-long <- -122.895361 # Site longitude
-TimeZoneHour <- -8 # time offset (in PST) from UTC 
+lat <- 	50.3623 # Site latitude
+long <- -100.20242 # Site longitude
+TimeZoneHour <- -6 # time offset (in CT) from UTC 
 
 export <- 0 # 1 to save a csv file of the data, 0 otherwise
 
-# Specify variables only relevant variables for input into REddyProc (Make sure to add NEE if you have FC included above)
+# Specify variables only relevant variables for input into REddyProc 
 col_order <- c("year","DOY","HHMM","NEE","FC","LE","H","FCH4","SW_IN_1_1_1","TA_1_1_1","RH_1_1_1","VPD_1_1_1","USTAR")
 
 # Specify variable names in REddyProc
@@ -86,7 +86,7 @@ level_RF_FCH4 <- "clean/ThirdStage" # which folder you are loading variables fro
 # df includes FCH4 and predictor variables.
 # FCH4 should be quality controlled. Other variables should be fully gap-filled (maybe gap-fill long gaps for CO2 fluxes first!! ADD LATER)
 predictors_FCH4 <- c("FCH4", "USTAR","NEE_PI_F_MDS","LE_PI_F_MDS","H_PI_F_MDS","SW_IN_1_1_1","TA_1_1_1","TS_1",
-                "RH_1_1_1","VPD_1_1_1","PA_1_1_1")
+                     "RH_1_1_1","VPD_1_1_1","PA_1_1_1")
 plot_RF_results <- 0
 vars_third_stage_RF_FCH4 <- c('FCH4_PI_F_RF')
 
@@ -94,11 +94,10 @@ vars_third_stage_RF_FCH4 <- c('FCH4_PI_F_RF')
 
 # Variables to copy from Second to Third stage- see second stage ini file for variable description
 # CHECK WHY 'COND_WATER_1_1_1' isn't working anymore
-copy_vars <- c('clean_tv','TA_1_1_1','TA_1_2_1','RH_1_1_1','RH_1_2_1','VPD_1_1_1','PA_1_1_1','P_1_1_1','WS_1_1_1','WD_1_1_1',
-               'wind_speed','wind_dir','DO_1_1_1','DOperc_1_1_1','WTD_1_1_1','ORP_1_1_1',
-               'pH_1_1_1','TW_1_1_1','CO2','H2O','CH4','SW_IN_1_1_1','SW_OUT_1_1_1','LW_IN_1_1_1','LW_OUT_1_1_1',
-               'NETRAD_1_1_1','ALB_1_1_1','PPFD_IN_1_1_1','PPFD_OUT_1_1_1','PPFD_IN_2_1_1','PPFD_DIF_1_1_1',
-               'PRI_1_1_1','NDVI_1_1_1','TS_1','TS_2','TS_3','TS_4','G_1','USTAR','SLE','SH','SCH4','SC',
-               'TKE','L','U_SIGMA','V_SIGMA','W_SIGMA','TAU','zdL')
+copy_vars <- c('clean_tv','TA_1_1_1','RH_1_1_1','PA_1_1_1','P_1_1_1','WS_1_1_1','WD_1_1_1',
+               'CO2','H2O','CH4','SW_IN_1_1_1','SW_OUT_1_1_1','LW_IN_1_1_1','LW_OUT_1_1_1',
+               'NETRAD_1_1_1','ALB_1_1_1','PPFD_IN_1_1_1',
+               'TS_1','TS_2','TS_3','USTAR','SLE','SH','SCH4','SC',
+               'TKE','L','U_SIGMA','V_SIGMA','W_SIGMA','VPD_1_1_1','TAU','zdL')
 
 # Add R functions to for: 'aerodynamic_resistance_momentum', 'aerodynamic_resistance_scalar','surface_conductance','specific_humidity'
