@@ -3,6 +3,10 @@
 
 # Revisions
 #
+# Oct 27, 2023 (Ted)
+#   - commented out local path for args
+#   - confirmed variables and site lat/lon
+#
 # Nov 7, 2022 (Zoran)
 #   - added unique() to year range to avoid year ranges where two same numbers appear
 #     (like years_REddyProc <- c(2022, 2022) which causes an error later on in ThirdStage_REddyProc).
@@ -19,7 +23,7 @@
 estYear <- 2021
 
 # Grab the arguments from Run_ThirdStage_REddyProc call
-args <-c("/Users/darianng/Documents/MSc_Geography/Biomet.net/R/database_functions", "/Users/darianng/Documents/MSc_Geography/Biomet_cleaning/Local_copies/Calculation_Procedures/TraceAnalysis_ini/Young/log/YOUNG_setThirdStageCleaningParameters.R")
+#args <-c("/Users/darianng/Documents/MSc_Geography/Biomet.net/R/database_functions", "/Users/darianng/Documents/MSc_Geography/Biomet_cleaning/Local_copies/Calculation_Procedures/TraceAnalysis_ini/Young/log/YOUNG_setThirdStageCleaningParameters.R")
 
 if(length(commandArgs(trailingOnly = TRUE))==0){
   cat("\nIn: YOUNG_ThirdStage_ini:\nNo input parameters!\nUsing whatever is in args variable \n")
