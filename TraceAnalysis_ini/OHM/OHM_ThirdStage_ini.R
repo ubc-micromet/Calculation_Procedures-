@@ -1,7 +1,15 @@
 # Written by Sara Knox
 # Aug 11, 2022
+# for HOGG
+#
+# Updated by Ted Scott
+# Oct 23, 2023
+# for OHM
 
 # Revisions
+#
+# Oct 27, 2023 (Ted)
+#   - edited to be OHM specific and to get 3rd stage in pipeline
 #
 # Nov 7, 2022 (Zoran)
 #   - added unique() to year range to avoid year ranges where two same numbers appear
@@ -11,18 +19,23 @@
 #     processed (yearIn and yearIn-1)
 # Nov 1, 2022 (Zoran)
 #   - removed hard-coded years, Ustar_scenario and others
+#
 
 
 # --------- These lines should not need editing ----------------------------------------------------
 
 # Year the site was established
-estYear <- 2021
+estYear <- 2023
 
 # Grab the arguments from Run_ThirdStage_REddyProc call
-#args <-c("/Users/darianng/Documents/MSc_Geography/Biomet.net/R/database_functions", "/Users/darianng/Documents/MSc_Geography/Biomet_cleaning/Local_copies/Calculation_Procedures/TraceAnalysis_ini/HOGG/log/HOGG_setThirdStageCleaningParameters.R")
+# Example below for running locally
+# in the [site]_setThirdStageCleaningParameters.R file all the paths should point to your local paths for the biomet repo and the local DB
+#args <-c("/Users/sara/Code/Biomet.net/R/database_functions", "/Users/sara/Library/CloudStorage/OneDrive-UBC/UBC/Database_FLUXNET/Calculation_Procedures/TraceAnalysis_ini/STJ/log/STJ_setThirdStageCleaningParameters.R")
+#source("/Users/sara/Code/Biomet.net/R/database_functions/Run_ThirdStage_REddyProc.R")
+
 
 if(length(commandArgs(trailingOnly = TRUE))==0){
-  cat("\nIn: HOGG_ThirdStage_ini:\nNo input parameters!\nUsing whatever is in args variable \n")
+  cat("\nIn: OHM_ThirdStage_ini:\nNo input parameters!\nUsing whatever is in args variable \n")
 } else {
   # otherwise use the third argument to pass the path
   args 		<- commandArgs(trailingOnly = TRUE)
@@ -58,8 +71,8 @@ vars_storage <- c("SC","SH","SLE","SCH4")
 tv_input <- "clean_tv"
 
 # Specify site location
-lat <- 	50.3705 # Site latitude
-long <- -100.5339 # Site longitude
+lat <- 	50.174 # Site latitude
+long <- -97.123 # Site longitude
 TimeZoneHour <- -6 # time offset (in CT) from UTC 
 
 export <- 0 # 1 to save a csv file of the data, 0 otherwise
