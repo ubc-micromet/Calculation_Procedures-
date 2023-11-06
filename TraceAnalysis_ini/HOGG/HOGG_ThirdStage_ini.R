@@ -3,6 +3,9 @@
 
 # Revisions
 #
+# Oct 27, 2023 (Ted)
+#   - confirmed variables and site lat/lon
+#
 # Nov 7, 2022 (Zoran)
 #   - added unique() to year range to avoid year ranges where two same numbers appear
 #     (like years_REddyProc <- c(2022, 2022) which causes an error later on in ThirdStage_REddyProc).
