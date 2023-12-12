@@ -1,5 +1,12 @@
 .DS_Store
 images/.DS_Store
 TraceAnalysis_ini/DSM/log/*.*
+TraceAnalysis_ini/RBM/log/*.*
+TraceAnalysis_ini/BB/log/*.*
+TraceAnalysis_ini/BB2/log/*.*
+TraceAnalysis_ini/HOGG/log/*.*
+TraceAnalysis_ini/YOUNG/log/*.*
+TraceAnalysis_ini/OHM/log/*.*
+TraceAnalysis_ini/BBS/log/*.*
 TraceAnalysis_ini/.DS_Store
 Notes.md
