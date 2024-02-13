@@ -1,0 +1,5 @@
+# Ignore everything in this directory
+*
+# Except this file
+!.gitignore
+# This maintains an empty folder and ensures the dierectory structure is maintained so we can pull then run without having to add the folder manually
