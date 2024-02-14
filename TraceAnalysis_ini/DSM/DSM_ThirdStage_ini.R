@@ -99,6 +99,6 @@ copy_vars <- c('clean_tv','TA_1_1_1','TA_1_2_1','RH_1_1_1','RH_1_2_1','VPD_1_1_1
                'pH_1_1_1','TW_1_1_1','CO2','H2O','CH4','SW_IN_1_1_1','SW_OUT_1_1_1','LW_IN_1_1_1','LW_OUT_1_1_1',
                'NETRAD_1_1_1','ALB_1_1_1','PPFD_IN_1_1_1','PPFD_OUT_1_1_1','PPFD_IN_2_1_1','PPFD_DIF_1_1_1',
                'PRI_1_1_1','NDVI_1_1_1','TS_1','TS_2','TS_3','TS_4','G_1','USTAR','SLE','SH','SCH4','SC',
-               'TKE','L','U_SIGMA','V_SIGMA','W_SIGMA','TAU','zdL')
+               'TKE','L','U_SIGMA','V_SIGMA','W_SIGMA','TAU','zdL','COND_WATER_1_1_1','Salinity')
 
 # Add R functions to for: 'aerodynamic_resistance_momentum', 'aerodynamic_resistance_scalar','surface_conductance','specific_humidity'
