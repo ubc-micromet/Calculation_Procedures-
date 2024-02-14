@@ -14,6 +14,9 @@
 #     processed (yearIn and yearIn-1)
 # Nov 1, 2022 (Zoran)
 #   - removed hard-coded years, Ustar_scenario and others
+#
+# Feb 13, 2024 (Ted)
+#   - site doesn't have good TS_1 sensor for FCH4 RF gap-filling, so adding LW_OUT as proxy
 
 
 # --------- These lines should not need editing ----------------------------------------------------
@@ -88,8 +91,8 @@ level_RF_FCH4 <- "clean/ThirdStage" # which folder you are loading variables fro
 # variable we need for FCH4 gap-filling (if implementing)
 # df includes FCH4 and predictor variables.
 # FCH4 should be quality controlled. Other variables should be fully gap-filled (maybe gap-fill long gaps for CO2 fluxes first!! ADD LATER)
-predictors_FCH4 <- c("FCH4", "USTAR","NEE_PI_F_MDS","LE_PI_F_MDS","H_PI_F_MDS","SW_IN_1_1_1","TA_1_1_1","TS_1",
-                     "RH_1_1_1","VPD_1_1_1","PA_1_1_1")
+predictors_FCH4 <- c("FCH4", "USTAR","NEE_PI_F_MDS","LE_PI_F_MDS","H_PI_F_MDS","SW_IN_1_1_1","TA_1_1_1",#"TS_1",
+                     "RH_1_1_1","VPD_1_1_1","PA_1_1_1","LW_OUT_1_1_1")
 plot_RF_results <- 0
 vars_third_stage_RF_FCH4 <- c('FCH4_PI_F_RF')
 
