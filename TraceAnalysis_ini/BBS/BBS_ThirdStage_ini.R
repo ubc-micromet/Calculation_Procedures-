@@ -1,0 +1,97 @@
+# Written by Sara Knox
+# Aug 11, 2022
+
+# Revisions
+#
+# Nov 7, 2022 (Zoran)
+#   - added unique() to year range to avoid year ranges where two same numbers appear
+#     (like years_REddyProc <- c(2022, 2022) which causes an error later on in ThirdStage_REddyProc).
+# Nov 6, 2022 (Zoran)
+#   - changed what yearsToProcess means. Now the value of 2 means that 2 years of data will be 
+#     processed (yearIn and yearIn-1)
+# Nov 1, 2022 (Zoran)
+#   - removed hard-coded years, Ustar_scenario and others
+
+# ## Example call from Rstudio to test:
+
+
+# ; args <- c("C:/Biomet.net/R/database_functions", "C:/database/Calculation_procedures/TraceAnalysis_ini/BBS/log/BBS_setThirdStageCleaningParameters.R")
+# ; source("C:/Biomet.net/R/database_functions/Run_ThirdStage_REddyProc.R")
+
+
+# --------- These lines should not need editing ----------------------------------------------------
+
+# Year the site was established
+estYear <- 2023
+
+# Grab the arguments from Run_ThirdStage_REddyProc call
+
+if(length(commandArgs(trailingOnly = TRUE))==0){
+  cat("\nIn: BBS_ThirdStage_ini:\nNo input parameters!\nUsing whatever is in args variable \n")
+} else {
+  # otherwise use the third argument to pass the path
+  args 		<- commandArgs(trailingOnly = TRUE)
+}    
+
+pathSetIni   		<- args[2]
+
+# load input arguments from pathInputArgs file
+source(pathSetIni)
+
+# Specify range of years to process
+stYear <- yrs-yearsToProcess+1
+# Check if year stYear exists. If not, set it to estYear
+if(stYear<estYear){
+  stYear <- estYear
+}
+
+edYear <- yrs
+years_REddyProc <- unique(c(stYear, edYear)) # Specify the number of years to use in REddyProc ustar filtering, gap-filling and partitioning (use all by default)
+years_RF <- unique(c(stYear, edYear)) # Specify the number of years to use in RF gap-filling (use all by default)
+#--------------------------------------------------------------------------------------------
+
+
+#============================================================================================
+# Edit the following lines for each site:
+
+# Specify variables of interest
+vars <- c("NEE","FC","LE","H","SW_IN_1_1_1","TA_1_1_1","RH_1_1_1","VPD_1_1_1","USTAR") 
+
+# Specify time vector name
+tv_input <- "clean_tv"
+
+# Specify site location
+lat <- 	49.1296  # Site latitude
+long <- -122.9851 # Site longitude
+TimeZoneHour <- -8 # time offset (in PST) from UTC 
+
+export <- 0 # 1 to save a csv file of the data, 0 otherwise
+
+# Specify variables only relevant variables for input into REddyProc 
+col_order <- c("year","DOY","HHMM","NEE","FC","LE","H","SW_IN_1_1_1","TA_1_1_1","RH_1_1_1","VPD_1_1_1","USTAR")
+
+# Specify variable names in REddyProc
+var_names<-c('Year','DoY','Hour','NEE','FC','LE','H','Rg','Tair','rH','VPD','Ustar')
+
+#Note that units should be the following:
+#UNITS<-list('-','-','-','umol_m-2_s-1','umol_m-2_s-1','Wm-2','Wm-2','nmol_m-2_s-1','Wm-2','degC','%','hPa','ms-1')
+
+# Define variables to save in third stage
+vars_third_stage_REddyProc <- c('GPP_uStar_f','GPP_DT_uStar','NEE_uStar_orig','NEE_uStar_f','FC_uStar_orig','FC_uStar_f','LE_uStar_orig','LE_uStar_f','H_uStar_orig','H_uStar_f','Reco_uStar','Reco_DT_uStar')
+vars_names_third_stage <- c('GPP_PI_F_NT','GPP_PI_F_DT','NEE','NEE_PI_F_MDS','FC','FC_PI_F_MDS','LE','LE_PI_F_MDS','H','H_PI_F_MDS','Reco_PI_F_NT','Reco_PI_F_DT')
+
+fill_RF_FCH4 <- 0 # 0 (no) or 1 (yes) to fill FCH4 and long gaps with RF from Kim et al., 2019 GCB 
+
+# Gap-filling long gaps with RF (add later!!)
+
+# Variables to copy from Second to Third stage- see second stage ini file for variable description
+# CHECK WHY 'COND_WATER_1_1_1' isn't working anymore
+copy_vars <- c('clean_tv','TA_1_1_1','RH_1_1_1','VPD_1_1_1','PA_1_1_1','P_1_1_1','WS_1_1_1','WD_1_1_1',
+               'wind_speed','wind_dir','CO2','H2O','SW_IN_1_1_1','SW_OUT_1_1_1','LW_IN_1_1_1','LW_OUT_1_1_1',
+               'NETRAD_1_1_1','USTAR','SLE','SH','SC',
+               'TKE','L','U_SIGMA','V_SIGMA','W_SIGMA','TAU','zdL')
+
+# Add R functions to for: 'aerodynamic_resistance_momentum', 'aerodynamic_resistance_scalar','surface_conductance','specific_humidity'
+
+# args <- c("C:/Biomet.net/R/database_functions", "C:/database/Calculation_procedures/TraceAnalysis_ini/BBS/log/BBS_setThirdStageCleaningParameters.R")
+# source("C:/Biomet.net/R/database_functions/Run_ThirdStage_REddyProc.R")
