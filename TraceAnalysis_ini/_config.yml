@@ -2,6 +2,20 @@ Database:
   Paths:
     SecondStage: Clean/SecondStage
     ThirdStage: Clean/ThirdStage
+    FirstStage:
+      Met:
+        raw: Met
+        clean: Met/clean
+      Flux:
+        raw: Flux
+        clean: Flux/clean
+      Manual: 
+        raw: Met/Manual
+        clean: Met/clean
+      ECCC:
+        # Station IDs can be downloaded here: https://api.weather.gc.ca/collections/climate-stations/items?f=json&limit=10000
+        raw: ECCC/STN_ID
+        clean: Met/clean
   datenum: 
     filename: clean_tv
     dtype: float64
