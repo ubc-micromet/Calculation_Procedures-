@@ -1,0 +1,11 @@
+Database:
+  Paths:
+    SecondStage: Clean/SecondStage
+    ThirdStage: Clean/ThirdStage
+  datenum: 
+    filename: clean_tv
+    dtype: float64
+    datenum_base: 719529
+    datenum_base_unit: D
+  traces:
+    dtype: float32
