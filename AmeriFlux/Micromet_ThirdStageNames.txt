@@ -3,5 +3,3 @@
 "PI","GPP"
 "PI","RECO" 
 "PI","FCH4"
-"PI","LE"
-"PI","H"
