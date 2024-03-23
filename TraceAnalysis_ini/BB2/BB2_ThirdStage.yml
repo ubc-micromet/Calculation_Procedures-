@@ -2,10 +2,10 @@
 # March 2024
 
 Metadata:
-  siteID: BBS
-  estYear: 2023 
-  lat: 49.12930679
-  long: -122.9849701
+  siteID: BB2
+  estYear: 2019 
+  lat: 49.1190
+  long: -122.9947
   TimeZoneHour: -8
 
 REddyProc:
@@ -29,6 +29,7 @@ REddyProc:
     FC: FC
     LE: LE
     H: H
+    FCH4: FCH4
     Rg: SW_IN_1_1_1
     Tair: TA_1_1_1
     rH: RH_1_1_1
@@ -40,3 +41,7 @@ REddyProc:
     basic: Rg,Tair,rH,VPD
 
 RF_GapFilling:
+  FCH4_U95:
+    # Fill the ReddyProc UStar Filtered Variable
+    var_dep: FCH4_U95_orig
+    Predictors: TA_1_1_1,TS_1_1_1,TS_1_2_1,TS_1_3_1,WTD_1,RH_1_1_1,VPD_1_1_1,PA_1_1_1

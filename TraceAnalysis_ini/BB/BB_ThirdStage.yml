@@ -1,13 +1,6 @@
 # Written by June Skeeter
 # March 2024
 
-# Database:
-#   data_source: MICROMET
-#   tv_input: clean_tv
-#   # Folder where stage three variables should be save
-#   level_out: Clean/ThirdStage
-#   level_in: Clean/SecondStage
-
 Metadata:
   siteID: BB
   estYear: 2015 
