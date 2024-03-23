@@ -13,13 +13,21 @@ Database:
         raw: Met/Manual
         clean: Met/clean
       ECCC:
-        # Station IDs can be downloaded here: https://api.weather.gc.ca/collections/climate-stations/items?f=json&limit=10000
+        # Station IDs see: _ECCC_Station_List.csv
         raw: ECCC/STN_ID
         clean: Met/clean
-  datenum: 
-    filename: clean_tv
+  Timestamp: 
+    name: clean_tv
     dtype: float64
-    datenum_base: 719529
-    datenum_base_unit: D
-  traces:
+    precision: 8
+    base: 719529
+    base_unit: D
+  Traces:
     dtype: float32
+    precision: 4
+Shortcuts:
+  # These can be replace with local paths
+  datadump: X:/SITEID/
+  highfreq: C:/highfreq/SITEID/
+  eddypro_outputs: \\vinimet.geog.ubc.ca\EddyPro_Output$/SITEID/
+  sites: C:/temp/
