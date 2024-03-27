@@ -2,6 +2,8 @@ Database:
   Paths:
     SecondStage: Clean/SecondStage
     ThirdStage: Clean/ThirdStage
+    ThirdStage_Default: Clean/ThirdStage_Default_Ustar
+    ThirdStage_Advanced: Clean/ThirdStage_Full_Ustar_Uncertainty
     FirstStage:
       Met:
         raw: Met
@@ -40,15 +42,22 @@ Processing:
     REddyProc:
       do_REddyProc: 1
       Ustar_filtering:
-        # Keep as True to run "fast"
+        # Keep "run_defaults" as True to run "fast" ustar filtering
+        # U05, U50, U95
         run_defaults: True
-        # If run_defaults != True, conduct "full" run (e.g., see bellow)
+        default_uncertainty:
+          samples: 100
+          min: 0.05
+          max: 0.095
+          steps: 3 
+        # If run_defaults != True, conduct "full_uncertainty" 
         # EProc$sEstimateUstarScenarios(nSample = samples, probs = seq(min_quantile,max_quantile,length.out = steps))
         # See Appendix B5 Wutzler (2018)
-        samples: 200
-        min: 0.025
-        max: 0.095
-        steps: 39 
+        full_uncertainty:
+          samples: 200
+          min: 0.025
+          max: 0.0975
+          steps: 39 
       vars_in:
         # Variables to feed to REddyProc (from second stage)
         # Key is REddyProc name, val is database name 
@@ -75,8 +84,12 @@ Processing:
       # Variables with an _f at the end have been gapfilled using MDS in REddyProc
       # Could expand to do MDS gap filling on all necessary inputs ...
       # Or work out our own gap-filling procedures for met/sub surface variables
+
+      # Name of variable to be filled (not including REddyProc qualifier)
+      # When saved as the model output, the variable will be appended with a tag
+      # e.g., FCH4_SC_RF_f (gap filled w/ random forest) and FCH4_SC_RF_fall (modelled w/ random forest)
       FCH4_SC:
-        # Fill the ReddyProc UStar Filtered Variable
+        # Full name of the Ustar filtered ReddyProc Variable (cleanest trace) to train model
         var_dep: FCH4_SC_U50_orig
         Predictors: TA_1_1_1_f,TS_1_1_1,TS_1_2_1,TS_1_3_1,WTD_1,RH_1_1_1_f,VPD_1_1_1_f,PA_1_1_1
 
@@ -85,17 +98,24 @@ Processing:
         var_dep: NEE_U50_orig
         Predictors: TA_1_1_1_f,TS_1_1_1,TS_1_2_1,TS_1_3_1,WTD_1,RH_1_1_1_f,VPD_1_1_1_f,PA_1_1_1
 
-      # H_SC:
-      #   # Fill the ReddyProc UStar Filtered Variable
-      #   var_dep: H_SC_U50_orig
-      #   Predictors: TA_1_1_1_f,TS_1_1_1,TS_1_2_1,TS_1_3_1,WTD_1,RH_1_1_1_f,VPD_1_1_1_f,PA_1_1_1
+      H_SC:
+        # Fill the ReddyProc UStar Filtered Variable
+        var_dep: H_SC_U50_orig
+        Predictors: TA_1_1_1_f,TS_1_1_1,TS_1_2_1,TS_1_3_1,WTD_1,RH_1_1_1_f,VPD_1_1_1_f,PA_1_1_1
 
-      # LE_SC:
-      #   # Fill the ReddyProc UStar Filtered Variable
-      #   var_dep: LE_SC_U50_orig
-      #   Predictors: TA_1_1_1_f,TS_1_1_1,TS_1_2_1,TS_1_3_1,WTD_1,RH_1_1_1_f,VPD_1_1_1_f,PA_1_1_1
+      LE_SC:
+        # Fill the ReddyProc UStar Filtered Variable
+        var_dep: LE_SC_U50_orig
+        Predictors: TA_1_1_1_f,TS_1_1_1,TS_1_2_1,TS_1_3_1,WTD_1,RH_1_1_1_f,VPD_1_1_1_f,PA_1_1_1
 
-
+    Final_Outputs:
+      # Copy and rename final outputs for base third stage folder
+      # Just an example syntax, not a complete list
+      # Final third stage name is key, intermediary third stage name is value
+      TA_1_1_1: TA_1_1_1_f
+      RH_1_1_1: RH_1_1_1_f
+      NEE: NEE_f
+      FCH4_FC: FCH4_SC_RF_f
 
 
 
