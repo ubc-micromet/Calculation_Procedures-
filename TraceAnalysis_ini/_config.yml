@@ -78,6 +78,7 @@ Processing:
         basic: Rg,Tair,rH,VPD
 
     RF_GapFilling:
+      do_REddyProc: 1
       # Example showing how configuration could be setup.  Not ideal set of inputs
       # Lots of pending optimizations to be made to RF approach 
       # Example set of predictors (not optimized!!!!!!!) 
