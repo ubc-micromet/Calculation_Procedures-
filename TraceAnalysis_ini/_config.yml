@@ -40,7 +40,7 @@ Processing:
       LE_SC:
         LE: SLE
     REddyProc:
-      do_REddyProc: 1
+      do_REddyProc: 0
       Ustar_filtering:
         # Keep "run_defaults" as True to run "fast" ustar filtering
         # U05, U50, U95
@@ -90,32 +90,42 @@ Processing:
       # e.g., FCH4_SC_RF_f (gap filled w/ random forest) and FCH4_SC_RF_fall (modelled w/ random forest)
       FCH4_SC:
         # Full name of the Ustar filtered ReddyProc Variable (cleanest trace) to train model
-        var_dep: FCH4_SC_U50_orig
-        Predictors: TA_1_1_1_f,TS_1_1_1,TS_1_2_1,TS_1_3_1,WTD_1,RH_1_1_1_f,VPD_1_1_1_f,PA_1_1_1
+        var_dep: FCH4_SC_uStar_orig 
+        Predictors: TA_1_1_1_f,RH_1_1_1_f,VPD_1_1_1_f,PA_1_1_1
 
       NEE:
         # Fill the ReddyProc UStar Filtered Variable
-        var_dep: NEE_U50_orig
-        Predictors: TA_1_1_1_f,TS_1_1_1,TS_1_2_1,TS_1_3_1,WTD_1,RH_1_1_1_f,VPD_1_1_1_f,PA_1_1_1
+        var_dep: NEE_uStar_orig
+        Predictors: TA_1_1_1_f,RH_1_1_1_f,VPD_1_1_1_f,PA_1_1_1
 
       H_SC:
         # Fill the ReddyProc UStar Filtered Variable
-        var_dep: H_SC_U50_orig
-        Predictors: TA_1_1_1_f,TS_1_1_1,TS_1_2_1,TS_1_3_1,WTD_1,RH_1_1_1_f,VPD_1_1_1_f,PA_1_1_1
+        var_dep: H_SC_uStar_orig
+        Predictors: TA_1_1_1_f,RH_1_1_1_f,VPD_1_1_1_f,PA_1_1_1
 
       LE_SC:
         # Fill the ReddyProc UStar Filtered Variable
-        var_dep: LE_SC_U50_orig
-        Predictors: TA_1_1_1_f,TS_1_1_1,TS_1_2_1,TS_1_3_1,WTD_1,RH_1_1_1_f,VPD_1_1_1_f,PA_1_1_1
+        var_dep: LE_SC_uStar_orig
+        Predictors: TA_1_1_1_f,RH_1_1_1_f,VPD_1_1_1_f,PA_1_1_1
 
     Final_Outputs:
       # Copy and rename final outputs for base third stage folder
       # Just an example syntax, not a complete list
       # Final third stage name is key, intermediary third stage name is value
-      TA_1_1_1: TA_1_1_1_f
-      RH_1_1_1: RH_1_1_1_f
-      NEE: NEE_U50_f
-      FCH4_FC: FCH4_SC_RF_f
+      GPP_PI_F_NT: GPP_uStar_f
+      GPP_PI_F_DT: GPP_DT_uStar
+      NEE: NEE_uStar_orig
+      NEE_PI_F_MDS: NEE_uStar_f
+      LE_SC: LE_SC_uStar_orig
+      LE_SC_PI_F_MDS: LE_SC_uStar_f
+      H_SC: H_SC_uStar_orig
+      H_SC_PI_F_MDS: H_SC_uStar_f
+      FCH4_SC: FCH4_SC_uStar_orig
+      FCH4_SC_PI_F_MDS: FCH4_SC_uStar_f
+      Reco_PI_F_NT: Reco_uStar
+      Reco_PI_F_DT: Reco_DT_uStar
+
+
 
 
 
