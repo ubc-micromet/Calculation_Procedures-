@@ -30,4 +30,4 @@ timestamp:
   output_name: TIMESTAMP_1
   timestamp_fmt: '%Y-%m-%d %H%M'
   timestamp_units: yyyy-mm-dd HHMM
-units_in_header: 'True'
+units_in_header: True
