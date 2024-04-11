@@ -130,7 +130,39 @@ Processing:
           # Fill the ReddyProc UStar Filtered Variable
           var_dep: LE
           Predictors: TA_1_1_1,RH_1_1_1,VPD_1_1_1
-
+  FirstStage:
+    DependencyTags:
+      tag_EC_Vars:
+        tag_LowFreq: >
+            CO2_MIXING_RATIO
+            H2O_MIXING_RATIO
+            CH4_MIXING_RATIO
+            T_SONIC
+        tag_HighFreq:
+          tag_LI7X00:
+            tag_CO2: >
+              FC
+              SC
+            tag_H2O: >
+              LE
+              SLE
+          tag_LI770: >
+            FCH4
+            SFCH4
+          tag_CSAT3: >
+            T_SONIC
+            u_mean
+            u_var
+            v_mean
+            v_var
+            w_mean
+            w_var
+            H
+            SH
+            ustar
+            TKE
+            L
+            zdL
 # Shortcuts:
 #   # These can be replace with local paths
 #   datadump: X:/SITEID/
