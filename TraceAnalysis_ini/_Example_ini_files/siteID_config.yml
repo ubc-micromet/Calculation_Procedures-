@@ -1,0 +1,37 @@
+# Written by June Skeeter
+# April 2024
+
+# All values under the Metadata tag are site specific
+# These values need to be defined for every site
+Metadata:
+  siteID: BB
+  estYear: 2015 
+  lat: 49.1296
+  long: -122.9851
+  TimeZoneHour: -8
+
+# All values under the Processing tag are OPTIONAL! 
+# Anything not otherwise defined here will take the values defined in the global _config.yml file
+# Any value provided here will supersede the default option
+Processing:
+  ThirdStage:
+    Storage:
+      # Example Syntax to turn off storage correction
+      Apply_Correction: False
+    REddyProc:
+      Ustar_filtering:
+        # Example syntax to run Full u* uncertainty routine
+        run_defaults: False
+        # These are the default uncertainty values (which are already defined in _config.yml), See Appendix B5 Wutzler (2018)
+        # But changing these parameters would change the uncertainty routine
+        full_uncertainty:
+          samples: 200
+          min: 0.025
+          max: 0.0975
+          steps: 39 
+    # Example syntax to overwrite the default RF model for FCH4
+    RF_GapFilling:
+      Models:
+        FCH4_PI_F_RF:
+          var_dep: FCH4
+          Predictors: WTD_1_1_1,TS_1_1_1,TS_1_2_1,TS_1_3_1
