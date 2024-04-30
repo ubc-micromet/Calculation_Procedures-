@@ -10,7 +10,7 @@ The ini files for a given site dictate how data is transferred from its raw form
   * For example if we have two observations for soil temperature at 5 cm, or three soil heat flux plates at 5cm, it will average them to get a more representative value.  It can also gapfill Met data with data from a nearby station
     * i.e. it will pull air temperature data from a nearby environment Canada weather station to fill missing values at a flux site.
 
-* **Stage 3** collects the stage 1 data and applies filtering and gap filling procedures to the flux data.
+* **Stage 3** collects the stage 2 data and applies filtering and gap filling procedures to the flux data.
 
 You can use the **guiPlotTraces** app to view raw or cleaned traces during any stage.  Its helpful to look at the data to make sure things are working as expected.
 
@@ -19,7 +19,7 @@ You can use the **guiPlotTraces** app to view raw or cleaned traces during any s
 
 ## First Stage
 
-In the first stage of cleaning the idea is to clean up the data so we can keep only the best measured values (data points) for each sensor. No interpolation is done at this stage so any removed points will not be gap-filled. If the researcher is looking for the best measurements from a particular sensor, this is the data that they want.
+In the first stage of cleaning the idea is to clean up the data so we can keep only the best measured values (data points) for each sensor. No interpolation is done at this stage so any removed points will not be gap-filled. If the researcher is looking for the best measurements from a particular *sensor*, this is the data that they want.
 
 The first stage cleaning provides the following features:
 
