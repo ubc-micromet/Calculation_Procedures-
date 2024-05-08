@@ -7,3 +7,10 @@ Metadata:
   lat: 49.12930679
   long: -122.9849701
   TimeZoneHour: -8
+
+Processing:
+  ThirdStage:
+    REddyProc:
+      vars_in:
+        # Define a custom input variable
+        seasons: Season

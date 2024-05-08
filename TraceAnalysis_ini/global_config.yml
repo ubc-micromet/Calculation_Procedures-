@@ -1,5 +1,7 @@
 Database:
   Paths:
+    # All paths assumed to be relative to db_root/YYYY/SiteID/ e.g., C:/Users/User/Database/YYYY/SiteID/
+    # (see by "Biomet.net/R/database_functions/db_root.R")
     SecondStage: Clean/SecondStage
     ThirdStage: Clean/ThirdStage
     ThirdStage_Default: Clean/ThirdStage_Default_Ustar
@@ -119,22 +121,22 @@ Processing:
         FCH4_PI_F_RF:
           # Full name of the Ustar filtered ReddyProc Variable (cleanest trace) to train model
           var_dep: FCH4
-          Predictors: TA_1_1_1,RH_1_1_1,VPD_1_1_1
+          Predictors: SW_IN_1_1_1,TA_1_1_1,VPD_1_1_1
 
         NEE_PI_F_RF:
           # Fill the ReddyProc UStar Filtered Variable
           var_dep: NEE
-          Predictors: TA_1_1_1,RH_1_1_1,VPD_1_1_1
+          Predictors: SW_IN_1_1_1,TA_1_1_1,VPD_1_1_1
 
-        H_PI_F_RF:
-          # Fill the ReddyProc UStar Filtered Variable
-          var_dep: H
-          Predictors: TA_1_1_1,RH_1_1_1,VPD_1_1_1
+        # H_PI_F_RF:
+        #   # Fill the ReddyProc UStar Filtered Variable
+        #   var_dep: H
+        #   Predictors: SW_IN_1_1_1,TA_1_1_1,VPD_1_1_1
 
-        LE_PI_F_RF:
-          # Fill the ReddyProc UStar Filtered Variable
-          var_dep: LE
-          Predictors: TA_1_1_1,RH_1_1_1,VPD_1_1_1
+        # LE_PI_F_RF:
+        #   # Fill the ReddyProc UStar Filtered Variable
+        #   var_dep: LE
+        #   Predictors: SW_IN_1_1_1,TA_1_1_1,VPD_1_1_1
 
   FirstStage:
     DependencyTags:
