@@ -108,6 +108,7 @@ Processing:
       VPD_1_1_1: VPD_1_1_1_f
 
     RF_GapFilling:
+      retrain_every_n_months: 1
       # Example showing how configuration could be setup.  Not ideal set of inputs
       # Lots of pending optimizations to be made to RF approach 
       # Example set of predictors (NOT OPTIMIZED!!!!!!!) 
@@ -128,15 +129,15 @@ Processing:
           var_dep: NEE
           Predictors: SW_IN_1_1_1,TA_1_1_1,VPD_1_1_1
 
-        # H_PI_F_RF:
-        #   # Fill the ReddyProc UStar Filtered Variable
-        #   var_dep: H
-        #   Predictors: SW_IN_1_1_1,TA_1_1_1,VPD_1_1_1
+        H_PI_F_RF:
+          # Fill the ReddyProc UStar Filtered Variable
+          var_dep: H
+          Predictors: SW_IN_1_1_1,TA_1_1_1,VPD_1_1_1
 
-        # LE_PI_F_RF:
-        #   # Fill the ReddyProc UStar Filtered Variable
-        #   var_dep: LE
-        #   Predictors: SW_IN_1_1_1,TA_1_1_1,VPD_1_1_1
+        LE_PI_F_RF:
+          # Fill the ReddyProc UStar Filtered Variable
+          var_dep: LE
+          Predictors: SW_IN_1_1_1,TA_1_1_1,VPD_1_1_1
 
   FirstStage:
     DependencyTags:
