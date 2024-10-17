@@ -82,6 +82,7 @@ Processing:
         rH: RH_1_1_1
         VPD: VPD_1_1_1
         Ustar: USTAR
+        season: season
       # MDS gap filling (will only fill these variables *if* present in "vars_in")
       MDSGapFill:
         UStarScens: NEE,LE,H,FCH4
