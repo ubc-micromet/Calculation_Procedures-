@@ -7,22 +7,6 @@ Metadata:
   lat: 49.1296
   long: -122.9851
   TimeZoneHour: -8
+  northOffset: 166
 
-# Optional parameters to modify default third stage parameters can be added here
-Processing:
-  ThirdStage:
-    Storage: 
-      Apply_Correction: False
-    REddyProc:
-      Run: True
-    RF_GapFilling:
-      Run: True
-  FirstStage:
-    DependencyTags:
-      tag_EC_Vars:
-        tag_LowFreq: >
-            T_SONIC
-      tag_VWC_Vars: >
-        VWC_1_1_1
-        VWC_2_1_1
 
