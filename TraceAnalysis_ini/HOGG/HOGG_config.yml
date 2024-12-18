@@ -1,9 +1,14 @@
 # Written by Sara Knox
 # March 2024
 
+# Dec 17, 2024 (Zoran)
+#    - Added northOffset: 0 based on ghg Metadata.
+
 Metadata:
   siteID: HOGG
   estYear: 2021
   lat: 50.371
   long: -100.534
   TimeZoneHour: -6
+  northOffset: 0
+    

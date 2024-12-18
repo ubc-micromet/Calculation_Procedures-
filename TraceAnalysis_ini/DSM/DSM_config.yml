@@ -1,12 +1,16 @@
 # Written by June Skeeter (edited by Zoran)
 # May 2024
 
+# Dec 17, 2024 (Zoran)
+#    - Added northOffset: 195 based on ghg Metadata.
+
 Metadata:
   siteID: DSM
   estYear: 2021 
   lat: 49.08875
   long: -122.895361
   TimeZoneHour: -8
+  northOffset: 195
 
 
 
