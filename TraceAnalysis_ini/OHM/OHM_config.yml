@@ -1,14 +1,51 @@
-# Written by Sara Knox (edited by Zoran Nesic)
+# Written by June Skeeter
 # March 2024
-
-# Dec 17, 2024 (Zoran)
-#    - Added northOffset: 0 based on ghg Metadata.
+# Modified by <Paul Moore>
+# Date: <2024-11-12>
 
 Metadata:
   siteID: OHM
-  estYear: 2021
-  lat: 50.174
+  estYear: 2023
+  lat: 50.174       
   long: -97.123
   TimeZoneHour: -6
-  northOffset: 0
-
+  northOffset: 360
+Processing:
+  ThirdStage:
+    Fluxes:
+      # Names of flux variables as they come in from second stage
+      # Putting NULL will remove the flux from consideration
+      H: H
+      LE: LE
+      NEE: FC
+      FCH4: FCH4
+    Standard_Cleaning:
+      # Trying a smaller wake filter to retain more data.
+      wakeFilter: 10
+    JS_Moving_Z:
+      Run: True
+    Papale_Spike_Removal:
+      Run: True
+    Storage_Correction: 
+      Run: True
+    REddyProc:
+      Run: TRUE
+      vars_in:
+        NEE: NEE
+        LE: LE
+        H: H
+        FCH4: FCH4
+        Rg: SW_IN_1_1_1
+        Tair: TA_1_1_1
+        VPD: VPD_1_1_1
+        Ustar: USTAR
+        season: season
+      MDSGapFill:
+        basic:
+          - Rg
+          - Tair
+          - VPD
+      Flux_Partitioning:
+        # Turn flux partitioning calculations off to reduce third stage run time for diagnosing errors.
+        # Turn flux partitioning calculations off if GPP and Reco are not wanted.
+        Run: True
